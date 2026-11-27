@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { SiteHeader } from "@/components/site-header";
 import { Feed } from "@/components/feed";
-import { loadStories, toIndexEntry } from "@/lib/content.js";
+import { editionStories, toIndexEntry } from "@/lib/content.js";
 import { formatAbsolute } from "@/lib/dates.js";
 import { fill } from "@/lib/fill.js";
 import { loadDictionary } from "@/lib/i18n.js";
@@ -15,7 +15,7 @@ export async function sectionMetadata(locale: string, section: Section): Promise
   if (!isLocale(locale)) return {};
   const dict = loadDictionary(locale);
   const title = `${dict.sections[section]} · ${dict.siteName}`;
-  const stories = loadStories();
+  const stories = editionStories();
   return {
     title,
     description: dict.siteDescription,
@@ -41,7 +41,7 @@ export async function sectionMetadata(locale: string, section: Section): Promise
 export async function SectionScreen({ locale, section }: { locale: string; section: Section }) {
   if (!isLocale(locale)) notFound();
   const dict = loadDictionary(locale);
-  const cards = loadStories()
+  const cards = editionStories()
     .filter((story) => story.sections.includes(section))
     .map((story) => {
       const entry = toIndexEntry(story, locale);

@@ -2,18 +2,18 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { SiteHeader } from "@/components/site-header";
 import { StoryArticle } from "@/components/story-article";
-import { loadStories } from "@/lib/content.js";
+import { editionStories } from "@/lib/content.js";
 import { loadDictionary } from "@/lib/i18n.js";
 import { isLocale, sectionPath, storyPath } from "@/lib/routes.js";
 import type { Locale } from "@/lib/dictionary";
 
 export function storyStaticParams(locale: "pt-br" | "en") {
-  return loadStories().map((story) => ({ locale, id: story.id }));
+  return editionStories().map((story) => ({ locale, id: story.id }));
 }
 
 export async function storyMetadata(locale: string, id: string): Promise<Metadata> {
   if (!isLocale(locale)) return {};
-  const story = loadStories().find((item) => item.id === id);
+  const story = editionStories().find((item) => item.id === id);
   if (!story) return {};
   const dict = loadDictionary(locale);
   const copy = story.locales[locale];
@@ -41,7 +41,7 @@ export async function storyMetadata(locale: string, id: string): Promise<Metadat
 
 export async function StoryScreen({ locale, id }: { locale: string; id: string }) {
   if (!isLocale(locale)) notFound();
-  const story = loadStories().find((item) => item.id === id);
+  const story = editionStories().find((item) => item.id === id);
   if (!story) notFound();
   const dict = loadDictionary(locale);
   const home = story.sections.includes("brazil") ? "brazil" : "world";

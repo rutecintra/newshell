@@ -150,7 +150,7 @@ function checkStory(story) {
   const where = story.id || "(missing id)";
   if (!isId(story.id)) fail(`${where}: id must be kebab-case`);
   if (story.folderId !== story.id) fail(`${where}: folder name must match id`);
-  if (!STATUSES.includes(story.status)) fail(`${where}: status must be sample or published`);
+  if (!STATUSES.includes(story.status)) fail(`${where}: status must be sample, draft, or published`);
   if (!Array.isArray(story.sections) || story.sections.length === 0 || story.sections.some((item) => !SECTIONS.includes(item))) {
     fail(`${where}: sections are invalid`);
   }

@@ -1,9 +1,9 @@
 import fs from "node:fs";
 import path from "node:path";
-import { loadStories, toIndexEntry } from "../lib/content.js";
+import { editionStories, toIndexEntry } from "../lib/content.js";
 import { LOCALES, SECTIONS } from "../lib/search.js";
 
-const stories = loadStories();
+const stories = editionStories();
 const root = path.join(process.cwd(), "public", "indexes");
 
 for (const locale of LOCALES) {

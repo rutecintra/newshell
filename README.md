@@ -36,6 +36,10 @@ Approved stories live in `content/stories/<id>/` with `meta.json`, `pt-br.md`, a
 
 `python3 scripts/collect.py` stores headlines, dates, and links in `queue/`. It does not store full articles. The scheduled workflow commits that queue on the `coleta` branch only when the metadata changes.
 
+`python3 scripts/draft.py` reads that queue, extracts the article with Trafilatura, and asks Groq for a bilingual draft. The article text is not committed. New stories are saved with `status: "draft"` and stay off the public edition. The `draft` workflow opens a pull request. Read the original report, then change `status` to `published` before merging.
+
+Create a free key at [console.groq.com](https://console.groq.com/) and save it as the Actions secret `GROQ_API_KEY`. `GROQ_MODEL` defaults to `openai/gpt-oss-20b`. `DRAFT_LIMIT` defaults to 2 stories per run.
+
 ## Fonts
 
 Newsreader and Source Sans 3 are stored in `app/fonts/` with their OFL licenses.

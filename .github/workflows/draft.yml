@@ -1,0 +1,62 @@
+name: draft
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "20 12 * * *"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: draft
+  cancel-in-progress: false
+
+jobs:
+  draft:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - name: Draft from the coleta queue
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GROQ_MODEL: openai/gpt-oss-20b
+          DRAFT_LIMIT: "2"
+        run: |
+          git fetch origin coleta
+          python3 scripts/draft.py
+      - name: Open a pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -z "$(git status --porcelain -- content/stories)" ]; then
+            echo "No new drafts"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          branch="draft/$(date -u +%Y%m%d%H%M%S)"
+          git checkout -b "$branch"
+          git add content/stories
+          git commit -m "feat: draft explanations"
+          git push origin "$branch"
+          gh pr create --base main --head "$branch" --title "feat: draft explanations" --body "$(cat <<'EOF'
+## Summary
+- Draft explanations from headlines already collected on the coleta branch.
+- Each story stays `draft`, so the public edition does not show it yet.
+
+## Review
+- [ ] Open the original report linked in the story
+- [ ] Check the date, the numbers, and the stage
+- [ ] Change `status` from `draft` to `published` before merging
+
+EOF
+)"
