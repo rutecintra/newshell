@@ -1,1 +1,25 @@
-[]
+[
+  {
+    "at": "2026-11-27T03:50:45Z",
+    "feeds": [
+      {
+        "id": "agencia-brasil",
+        "status": "ok",
+        "items": 10,
+        "error": null
+      },
+      {
+        "id": "camara-noticias",
+        "status": "ok",
+        "items": 20,
+        "error": null
+      },
+      {
+        "id": "un-news",
+        "status": "ok",
+        "items": 30,
+        "error": null
+      }
+    ]
+  }
+]

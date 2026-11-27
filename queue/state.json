@@ -1,3 +1,22 @@
 {
-  "feeds": {}
+  "feeds": {
+    "agencia-brasil": {
+      "etag": "\"1795741709-1\"",
+      "lastModified": "Fri, 27 Nov 2026 01:08:29 GMT",
+      "lastError": null,
+      "lastSuccessAt": "2026-11-27T03:50:44Z"
+    },
+    "camara-noticias": {
+      "etag": null,
+      "lastModified": null,
+      "lastError": null,
+      "lastSuccessAt": "2026-11-27T03:50:45Z"
+    },
+    "un-news": {
+      "etag": null,
+      "lastModified": null,
+      "lastError": null,
+      "lastSuccessAt": "2026-11-27T03:50:45Z"
+    }
+  }
 }
