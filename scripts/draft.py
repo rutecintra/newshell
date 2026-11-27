@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Draft bilingual explanations from the coleta queue.
+"""Draft bilingual explanations from the queue branch.
 
 Trafilatura reads the article in memory. Groq writes the draft. The full
 article is not stored. Stories are written with status draft, so the public
@@ -307,7 +307,7 @@ def remote_draft_urls():
 
 def load_queue():
     shown = subprocess.run(
-        ["git", "show", "origin/coleta:queue/pending.json"],
+        ["git", "show", "origin/queue:queue/pending.json"],
         capture_output=True,
         text=True,
         check=False,

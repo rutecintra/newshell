@@ -25,13 +25,13 @@ jobs:
         with:
           python-version: "3.11"
       - run: pip install -r requirements.txt
-      - name: Draft from the coleta queue
+      - name: Draft from the queue branch
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           GROQ_MODEL: openai/gpt-oss-20b
           DRAFT_LIMIT: "2"
         run: |
-          git fetch origin coleta
+          git fetch origin queue
           python3 scripts/draft.py
       - name: Open a pull request
         env:
@@ -48,4 +48,4 @@ jobs:
           git add content/stories
           git commit -m "feat: draft explanations"
           git push origin "$branch"
-          gh pr create --base main --head "$branch" --title "feat: draft explanations" --body "Draft explanations from the coleta queue. Each story stays draft until a reviewer checks the original report and changes status to published."
+          gh pr create --base main --head "$branch" --title "feat: draft explanations" --body "Draft explanations from the queue branch. Each story stays draft until a reviewer checks the original report and changes status to published."

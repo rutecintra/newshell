@@ -22,15 +22,15 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - name: Collect on the coleta branch
+      - name: Collect on the queue branch
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git fetch origin coleta || true
-          if git show-ref --verify --quiet refs/remotes/origin/coleta; then
-            git checkout -B coleta origin/coleta
+          git fetch origin queue || true
+          if git show-ref --verify --quiet refs/remotes/origin/queue; then
+            git checkout -B queue origin/queue
           else
-            git checkout -B coleta
+            git checkout -B queue
           fi
           python3 scripts/collect.py
           git add queue/pending.json queue/state.json queue/history.json
@@ -39,4 +39,4 @@ jobs:
             exit 0
           fi
           git commit -m "chore: collect headlines"
-          git push origin coleta
+          git push origin queue
