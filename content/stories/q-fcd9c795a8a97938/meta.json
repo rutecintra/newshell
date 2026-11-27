@@ -1,0 +1,44 @@
+{
+  "id": "q-fcd9c795a8a97938",
+  "status": "draft",
+  "sections": [
+    "brazil"
+  ],
+  "countries": [
+    "BR"
+  ],
+  "topics": [
+    "politics"
+  ],
+  "subtopics": [],
+  "stage": "under-discussion",
+  "publishedAt": "2026-11-27T00:13:00Z",
+  "updatedAt": "2026-11-27T05:22:40Z",
+  "eventAt": null,
+  "dateBasis": "source-publication",
+  "featured": null,
+  "sources": [
+    {
+      "id": "report",
+      "outlet": "Agência Brasil",
+      "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/governo-e-produtores-repudiam-critica-de-macron-carne-brasileira",
+      "language": "pt-br",
+      "kind": "report",
+      "publishedAt": "2026-11-27T00:13:00Z"
+    }
+  ],
+  "visuals": [],
+  "corrections": [],
+  "locales": {
+    "pt-br": {
+      "title": "Governo e produtores repudiam crítica de Macron à carne brasileira",
+      "description": "O governo brasileiro e associações de exportadores de carne criticaram declarações do presidente francês, Emmanuel Macron, que disse que a carne brasileira é \"dopada\" e celebrou restrições à importação de produtos de origem animal do Brasil e do Mercosul pela União Europeia. Ao…. The original report is linked from this story.",
+      "reviewedAt": "2026-11-27T05:22:40Z"
+    },
+    "en": {
+      "title": "Governo e produtores repudiam crítica de Macron à carne brasileira",
+      "description": "O governo brasileiro e associações de exportadores de carne criticaram declarações do presidente francês, Emmanuel Macron, que disse que a carne brasileira é \"dopada\" e celebrou restrições à importação de produtos de origem animal do Brasil e do Mercosul pela União Europeia. Ao…. The original report is linked from this story.",
+      "reviewedAt": "2026-11-27T05:22:40Z"
+    }
+  }
+}
