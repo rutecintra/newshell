@@ -1,0 +1,44 @@
+{
+  "id": "q-9e07bc4a31bf1d56",
+  "status": "draft",
+  "sections": [
+    "brazil"
+  ],
+  "countries": [
+    "BR"
+  ],
+  "topics": [
+    "social-rights"
+  ],
+  "subtopics": [],
+  "stage": "under-discussion",
+  "publishedAt": "2026-11-26T23:58:00Z",
+  "updatedAt": "2026-11-27T05:31:03Z",
+  "eventAt": null,
+  "dateBasis": "source-publication",
+  "featured": null,
+  "sources": [
+    {
+      "id": "report",
+      "outlet": "Agência Brasil",
+      "url": "https://agenciabrasil.ebc.com.br/geral/noticia/2026-11/amazonas-para-e-roraima-passam-por-apagao-de-energia-nesta-quinta",
+      "language": "pt-br",
+      "kind": "report",
+      "publishedAt": "2026-11-26T23:58:00Z"
+    }
+  ],
+  "visuals": [],
+  "corrections": [],
+  "locales": {
+    "pt-br": {
+      "title": "Amazonas, Pará e Roraima passam por apagão de energia nesta quinta",
+      "description": "Amazonas, Pará e Roraima passaram por um apagão de energia elétrica na tarde desta quinta-feira (26), resultado do desligamento de cerca de 2.323 MW em linhas de transmissão na Região Norte. O Operador Nacional do Sistema Elétrico (ONS) disse que o restabelecimento de energia oc…. The original report is linked from this story.",
+      "reviewedAt": "2026-11-27T05:31:03Z"
+    },
+    "en": {
+      "title": "Amazonas, Pará e Roraima passam por apagão de energia nesta quinta",
+      "description": "Amazonas, Pará e Roraima passaram por um apagão de energia elétrica na tarde desta quinta-feira (26), resultado do desligamento de cerca de 2.323 MW em linhas de transmissão na Região Norte. O Operador Nacional do Sistema Elétrico (ONS) disse que o restabelecimento de energia oc…. The original report is linked from this story.",
+      "reviewedAt": "2026-11-27T05:31:03Z"
+    }
+  }
+}
