@@ -1,0 +1,42 @@
+{
+  "id": "q-1e316631af887d97",
+  "status": "published",
+  "sections": [
+    "world"
+  ],
+  "countries": [
+    "UZ"
+  ],
+  "topics": [
+    "social-rights",
+    "education"
+  ],
+  "subtopics": [
+    "women"
+  ],
+  "stage": "under-discussion",
+  "publishedAt": "2026-11-26T12:00:00Z",
+  "updatedAt": "2026-11-27T06:20:15Z",
+  "eventAt": null,
+  "dateBasis": "source-publication",
+  "featured": null,
+  "sources": [
+    {
+      "id": "report",
+      "outlet": "UN News",
+      "url": "https://news.un.org/feed/view/en/story/2026/11/1168878",
+      "language": "en",
+      "kind": "report",
+      "publishedAt": "2026-11-26T12:00:00Z"
+    }
+  ],
+  "visuals": [],
+  "corrections": [],
+  "locales": {
+    "pt-br": {
+      "title": "‘Come right now’: How a crisis centre in Samarkand helps women escape violence",
+      "description": "Irina* paced the apartment. Her husband had come home drunk again, and she knew the beatings would follow.",
+      "reviewedAt": "2026-11-27T06:20:15Z"
+    }
+  }
+}
