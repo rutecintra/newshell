@@ -1,0 +1,39 @@
+{
+  "id": "q-5baea50728e685d6",
+  "status": "published",
+  "sections": [
+    "brazil"
+  ],
+  "countries": [
+    "BR"
+  ],
+  "topics": [
+    "politics"
+  ],
+  "subtopics": [],
+  "stage": "approved",
+  "publishedAt": "2026-11-26T21:46:00Z",
+  "updatedAt": "2026-11-27T06:20:15Z",
+  "eventAt": null,
+  "dateBasis": "source-publication",
+  "featured": null,
+  "sources": [
+    {
+      "id": "report",
+      "outlet": "Câmara dos Deputados",
+      "url": "https://www.camara.leg.br/noticias/1323448-comissao-aprova-divulgacao-de-beneficios-e-pagamentos-de-empresas-a-profissionais-de-saude",
+      "language": "pt-br",
+      "kind": "report",
+      "publishedAt": "2026-11-26T21:46:00Z"
+    }
+  ],
+  "visuals": [],
+  "corrections": [],
+  "locales": {
+    "pt-br": {
+      "title": "Comissão aprova divulgação de benefícios e pagamentos de empresas a profissionais de saúde",
+      "description": "Medida busca permitir que pacientes conheçam relações financeiras que possam influenciar indicações de tratamentos, produtos ou serviços. A reportagem original está ligada nesta matéria.",
+      "reviewedAt": "2026-11-27T06:20:15Z"
+    }
+  }
+}
