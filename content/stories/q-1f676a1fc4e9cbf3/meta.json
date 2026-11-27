@@ -1,0 +1,39 @@
+{
+  "id": "q-1f676a1fc4e9cbf3",
+  "status": "published",
+  "sections": [
+    "brazil"
+  ],
+  "countries": [
+    "BR"
+  ],
+  "topics": [
+    "politics"
+  ],
+  "subtopics": [],
+  "stage": "under-discussion",
+  "publishedAt": "2026-11-26T14:53:00Z",
+  "updatedAt": "2026-11-27T06:20:15Z",
+  "eventAt": null,
+  "dateBasis": "source-publication",
+  "featured": null,
+  "sources": [
+    {
+      "id": "report",
+      "outlet": "Câmara dos Deputados",
+      "url": "https://www.camara.leg.br/noticias/1323183-cancelada-votacao-do-parecer-sobre-mudancas-no-codigo-de-transito",
+      "language": "pt-br",
+      "kind": "report",
+      "publishedAt": "2026-11-26T14:53:00Z"
+    }
+  ],
+  "visuals": [],
+  "corrections": [],
+  "locales": {
+    "pt-br": {
+      "title": "Cancelada votação do parecer sobre mudanças no Código de Trânsito",
+      "description": "Relator apresentou mudanças no parecer sobre o projeto principal e as 270 propostas que tramitam em conjunto. A reportagem original está ligada nesta matéria.",
+      "reviewedAt": "2026-11-27T06:20:15Z"
+    }
+  }
+}
