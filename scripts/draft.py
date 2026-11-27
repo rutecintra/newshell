@@ -109,6 +109,32 @@ def parse_model_json(text):
         raise
 
 
+def locale_block(model, locale):
+    locales = model.get("locales") if isinstance(model.get("locales"), dict) else model
+    if not isinstance(locales, dict):
+        return {}
+    names = ("pt-br", "pt_br", "pt-BR", "pt", "portuguese") if locale == "pt-br" else ("en", "en-us", "en_us", "english")
+    for name in names:
+        block = locales.get(name)
+        if isinstance(block, dict):
+            flat = dict(block)
+            for key in ("sections", "explanation", "content", "body"):
+                nested = block.get(key)
+                if isinstance(nested, dict):
+                    flat.update(nested)
+            return flat
+    return {}
+
+
+def field_text(block, field):
+    snake = re.sub(r"(?<!^)(?=[A-Z])", "_", field).lower()
+    kebab = snake.replace("_", "-")
+    for key in (field, snake, kebab):
+        if block.get(key):
+            return block.get(key)
+    return ""
+
+
 def build_story(item, model, reviewed_at):
     if not isinstance(model, dict):
         return None
@@ -134,18 +160,16 @@ def build_story(item, model, reviewed_at):
     locales = {}
     markdown = {}
     for locale in ("pt-br", "en"):
-        copy = (model.get("locales") or {}).get(locale) or {}
-        title = clean_line(copy.get("title"))
-        description = clean_line(copy.get("description"))
-        fields = {}
-        for heading, field in FIELDS:
-            snake = re.sub(r"(?<!^)(?=[A-Z])", "_", field).lower()
-            fields[field] = prose(copy.get(field) or copy.get(snake))
+        copy = locale_block(model, locale)
+        title = clean_line(copy.get("title") or item.get("title"))
+        description = clean_line(copy.get("description") or item.get("summary"))
+        fields = {field: prose(field_text(copy, field)) for _, field in FIELDS}
         count = word_count(fields)
         if description and sentence_count(description) < 2:
             description = description.rstrip(".") + ". The original report is linked from this story."
         if not title or sentence_count(description) < 2 or count < MIN_WORDS:
-            report(f"reject {item['id']} {locale}: {count} words, description={description[:120]!r}")
+            keys = ",".join(copy.keys()) if copy else "missing"
+            report(f"reject {item['id']} {locale}: {count} words, keys={keys}")
             return None
         if any(not fields[field] for _, field in FIELDS):
             print(f"reject {item['id']} {locale}: a section is empty")
