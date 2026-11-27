@@ -1,0 +1,40 @@
+{
+  "id": "q-df23af778bcee8c8",
+  "status": "published",
+  "sections": [
+    "brazil"
+  ],
+  "countries": [
+    "BR"
+  ],
+  "topics": [
+    "politics",
+    "social-rights"
+  ],
+  "subtopics": [],
+  "stage": "approved",
+  "publishedAt": "2026-11-26T22:05:00Z",
+  "updatedAt": "2026-11-27T06:20:15Z",
+  "eventAt": null,
+  "dateBasis": "source-publication",
+  "featured": null,
+  "sources": [
+    {
+      "id": "report",
+      "outlet": "Agência Brasil",
+      "url": "https://agenciabrasil.ebc.com.br/direitos-humanos/noticia/2026-11/iphan-aprova-tombamento-do-antigo-predio-do-doi-codi-no-rio",
+      "language": "pt-br",
+      "kind": "report",
+      "publishedAt": "2026-11-26T22:05:00Z"
+    }
+  ],
+  "visuals": [],
+  "corrections": [],
+  "locales": {
+    "pt-br": {
+      "title": "Iphan aprova tombamento do antigo prédio do DOI-Codi no Rio",
+      "description": "O Instituto do Patrimônio Histórico e Artístico Nacional (Iphan) aprovou nesta quinta-feira (26) o tombamento do prédio onde funcionou, na ditadura militar, o Destacamento de Operações de Informações - Centro de Operações de Defesa Interna (DOI-Codi), no Rio de Janeiro. O local…. A reportagem original está ligada nesta matéria.",
+      "reviewedAt": "2026-11-27T06:20:15Z"
+    }
+  }
+}
