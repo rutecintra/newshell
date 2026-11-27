@@ -1,0 +1,39 @@
+{
+  "id": "q-646f727b597a7cd8",
+  "status": "published",
+  "sections": [
+    "brazil"
+  ],
+  "countries": [
+    "BR"
+  ],
+  "topics": [
+    "politics"
+  ],
+  "subtopics": [],
+  "stage": "under-discussion",
+  "publishedAt": "2026-11-26T20:03:00Z",
+  "updatedAt": "2026-11-27T06:20:15Z",
+  "eventAt": null,
+  "dateBasis": "source-publication",
+  "featured": null,
+  "sources": [
+    {
+      "id": "report",
+      "outlet": "Câmara dos Deputados",
+      "url": "https://www.camara.leg.br/noticias/1323397-comissao-aprova-projeto-que-destina-a-pf-e-ao-exercito-recursos-arrecadados-com-taxas-e-multas",
+      "language": "pt-br",
+      "kind": "report",
+      "publishedAt": "2026-11-26T20:03:00Z"
+    }
+  ],
+  "visuals": [],
+  "corrections": [],
+  "locales": {
+    "pt-br": {
+      "title": "Comissão aprova projeto que destina à PF e ao Exército recursos arrecadados com taxas e multas",
+      "description": "Projeto ainda será analisado pela Comissão de Constituição e Justiça da Câmara. A reportagem original está ligada nesta matéria.",
+      "reviewedAt": "2026-11-27T06:20:15Z"
+    }
+  }
+}
