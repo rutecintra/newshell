@@ -1,0 +1,39 @@
+{
+  "id": "q-c964e4b3db3ecb1a",
+  "status": "published",
+  "sections": [
+    "world"
+  ],
+  "countries": [
+    "INT"
+  ],
+  "topics": [
+    "social-rights"
+  ],
+  "subtopics": [],
+  "stage": "under-discussion",
+  "publishedAt": "2026-11-25T12:00:00Z",
+  "updatedAt": "2026-11-27T06:20:15Z",
+  "eventAt": null,
+  "dateBasis": "source-publication",
+  "featured": null,
+  "sources": [
+    {
+      "id": "report",
+      "outlet": "UN News",
+      "url": "https://news.un.org/feed/view/en/story/2026/11/1168873",
+      "language": "en",
+      "kind": "report",
+      "publishedAt": "2026-11-25T12:00:00Z"
+    }
+  ],
+  "visuals": [],
+  "corrections": [],
+  "locales": {
+    "pt-br": {
+      "title": "Governments and experts gather in Nairobi to tackle the global housing crisis",
+      "description": "A home is a place where people can feel safe. Yet billions worldwide do not have a proper place to live. As the global housing crisis deepens, government representatives and housing experts are gathering at the United Nations in Nairobi from 26-27 November to discuss how to addr…",
+      "reviewedAt": "2026-11-27T06:20:15Z"
+    }
+  }
+}
