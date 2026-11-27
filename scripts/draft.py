@@ -261,6 +261,7 @@ def ask_groq(api_key, model_name, item, article):
         headers={
             "Authorization": "Bearer " + api_key,
             "Content-Type": "application/json",
+            "User-Agent": "groq-python/0.32.0",
         },
     )
     try:
