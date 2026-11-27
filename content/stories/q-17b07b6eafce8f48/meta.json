@@ -1,0 +1,39 @@
+{
+  "id": "q-17b07b6eafce8f48",
+  "status": "published",
+  "sections": [
+    "brazil"
+  ],
+  "countries": [
+    "BR"
+  ],
+  "topics": [
+    "education"
+  ],
+  "subtopics": [],
+  "stage": "under-discussion",
+  "publishedAt": "2026-11-26T23:56:00Z",
+  "updatedAt": "2026-11-27T05:57:44Z",
+  "eventAt": null,
+  "dateBasis": "source-publication",
+  "featured": null,
+  "sources": [
+    {
+      "id": "report",
+      "outlet": "Agência Brasil",
+      "url": "https://agenciabrasil.ebc.com.br/meio-ambiente/noticia/2026-11/angra-dos-reis-registra-maior-volume-de-chuva-no-estado-nesta-quinta",
+      "language": "pt-br",
+      "kind": "report",
+      "publishedAt": "2026-11-26T23:56:00Z"
+    }
+  ],
+  "visuals": [],
+  "corrections": [],
+  "locales": {
+    "pt-br": {
+      "title": "Angra dos Reis registra maior volume de chuva no estado nesta quinta",
+      "description": "O município de Angra dos Reis, na Costa Verde, registrou o maior volume de chuva na madrugada desta quinta-feira (26), segundo dados do Centro Nacional de Monitoramento e Alertas de Desastres Naturais (Cemaden-RJ). Na Vila Histórica, o acumulado de água ultrapassou os 180 mm. Ta…",
+      "reviewedAt": "2026-11-27T05:57:44Z"
+    }
+  }
+}
