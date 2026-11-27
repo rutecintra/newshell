@@ -17,15 +17,12 @@ def model():
         "whoMayBeAffected": section,
         "whereThingsStand": section,
     }
-    english = dict(locale)
-    english["title"] = "A fact checked against the report"
-    english["description"] = "The report describes a fact. The stage still depends on the original text."
     return {
         "topics": ["education", "not-a-topic"],
         "subtopics": ["disability"],
         "countries": ["br"],
         "stage": "introduced",
-        "locales": {"pt-br": locale, "en": english},
+        "locales": {"pt-br": locale},
     }
 
 
@@ -60,7 +57,7 @@ class DraftTest(unittest.TestCase):
         self.assertEqual(built["meta"]["topics"], ["education"])
         self.assertEqual(built["meta"]["countries"], ["BR"])
         self.assertIn("## what-happened", built["markdown"]["pt-br"])
-        self.assertIn("## where-things-stand", built["markdown"]["en"])
+        self.assertNotIn("en", built["markdown"])
 
     def test_short_article_is_not_drafted(self):
         written = draft_items(

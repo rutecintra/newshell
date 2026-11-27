@@ -7,7 +7,7 @@ import { loadDictionary } from "@/lib/i18n.js";
 import { isLocale, sectionPath, storyPath } from "@/lib/routes.js";
 import type { Locale } from "@/lib/dictionary";
 
-export function storyStaticParams(locale: "pt-br" | "en") {
+export function storyStaticParams(locale: "pt-br") {
   return editionStories().map((story) => ({ locale, id: story.id }));
 }
 
@@ -25,7 +25,6 @@ export async function storyMetadata(locale: string, id: string): Promise<Metadat
       canonical: storyPath(locale, id),
       languages: {
         "pt-BR": storyPath("pt-br", id),
-        en: storyPath("en", id),
       },
     },
     openGraph: {
@@ -33,7 +32,7 @@ export async function storyMetadata(locale: string, id: string): Promise<Metadat
       description: copy.description,
       url: storyPath(locale, id),
       type: "article",
-      locale: locale === "en" ? "en_US" : "pt_BR",
+      locale: "pt_BR",
     },
     robots: story.status === "published" ? { index: true, follow: true } : { index: false, follow: false },
   };
@@ -48,7 +47,7 @@ export async function StoryScreen({ locale, id }: { locale: string; id: string }
 
   return (
     <>
-      <SiteHeader locale={locale as Locale} dict={dict} path={storyPath(locale, id)} />
+      <SiteHeader locale={locale as Locale} dict={dict} />
       <main id="content">
         <p className="back">
           <a href={sectionPath(locale, home)}>{dict.sections[home]}</a>

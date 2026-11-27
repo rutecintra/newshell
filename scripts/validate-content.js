@@ -8,6 +8,7 @@ import {
 } from "../lib/content.js";
 import {
   LOCALES,
+  SOURCE_LANGUAGES,
   PLACEMENTS,
   SECTIONS,
   SOURCE_KINDS,
@@ -75,7 +76,7 @@ function checkSourcesFile() {
     ids.add(source.id);
     if (!source.outlet) fail(`${where}: outlet is required`);
     if (!isHttps(source.feedUrl)) fail(`${where}: feedUrl must be https`);
-    if (!LOCALES.includes(source.language)) fail(`${where}: language is not supported`);
+    if (!SOURCE_LANGUAGES.includes(source.language)) fail(`${where}: language is not supported`);
     if (!Array.isArray(source.coverage) || source.coverage.some((item) => !SECTIONS.includes(item))) {
       fail(`${where}: coverage must list brazil and/or world`);
     }
@@ -103,7 +104,7 @@ function checkVisual(story, visual) {
       fail(`${where}: ${locale} needs title, caption, alt, and labels`);
     }
   }
-  const labels = visual.locales?.en?.labels || {};
+  const labels = visual.locales?.["pt-br"]?.labels || {};
   if (visual.type === "bars" || visual.type === "line") {
     const rows = visual.type === "bars" ? visual.series : visual.points;
     if (!Array.isArray(rows) || rows.length < 2) fail(`${where}: needs at least two values`);

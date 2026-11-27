@@ -26,8 +26,8 @@ type VisualCopy = {
   labels: Record<string, string>;
 };
 
-function formatWhen(iso: string, locale: Locale) {
-  return new Intl.DateTimeFormat(locale === "en" ? "en-GB" : "pt-BR", {
+function formatWhen(iso: string) {
+  return new Intl.DateTimeFormat("pt-BR", {
     timeZone: "America/Sao_Paulo",
     day: "numeric",
     month: "short",
@@ -126,7 +126,7 @@ export function StoryVisual({
           {(visual.events || []).map((event) => (
             <li key={event.id} className={event.state === "expected" ? "expected" : "occurred"}>
               <p className="state">{event.state === "expected" ? dict.expected : dict.occurred}</p>
-              <time dateTime={event.at}>{formatWhen(event.at, locale)}</time>
+              <time dateTime={event.at}>{formatWhen(event.at)}</time>
               <p>{copy.labels[event.id]}</p>
             </li>
           ))}

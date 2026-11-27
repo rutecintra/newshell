@@ -8,20 +8,14 @@ O ONS e as concessionárias locais estão trabalhando para voltar a energia aos 
 
 Moradores, empresas, hospitais e escolas nas áreas afetadas perderam o fornecimento de energia, o que pode comprometer serviços essenciais e a vida cotidiana.
 
-On the afternoon of Thursday, November 26, the states of Amazonas, Pará and Roraima experienced a power outage caused by the shutdown of about 2,323 MW on transmission lines. The National System Operator (ONS) said restoration is happening gradually and safely.
-
-The outage cut power to Manaus, several Amazonas municipalities, seven western Pará cities and the Roraima region, leaving about 110,000 customers without electricity.
-
-The ONS and local utilities are working to restore power, but the process is still ongoing and may take several hours.
-
 ## in-plain-terms
 
-The mechanism is the one stated in the account above.
+O corte veio do desligamento de cerca de 2.323 MW nas linhas de transmissão. A energia volta aos poucos, segundo o ONS.
 
 ## who-may-be-affected
 
-The people affected are the ones named in the account above.
+Moradores, empresas, hospitais e escolas de Manaus, de municípios do Amazonas, de sete cidades do oeste do Pará e de Roraima ficaram sem luz. Cerca de 110 mil clientes foram atingidos.
 
 ## where-things-stand
 
-The stage is only what the account above states.
+O ONS e as concessionárias ainda restabelecem o fornecimento. O processo pode levar algumas horas.

@@ -3,15 +3,12 @@ import { sectionPath } from "@/lib/routes.js";
 
 export const metadata: Metadata = {
   robots: { index: false, follow: false },
-  title: "News, explained",
+  title: "Notícias explicadas",
 };
 
 const redirectScript = `
 try {
-  var pref = localStorage.getItem("locale");
-  var locale = pref === "en" ? "en" : "pt-br";
-  var section = locale === "en" ? "brazil" : "brasil";
-  location.replace("/" + locale + "/" + section + "/" + location.search);
+  location.replace("/pt-br/brasil/" + location.search);
 } catch (error) {}
 `;
 
@@ -19,12 +16,9 @@ export default function HomePage() {
   return (
     <main id="content" className="gate">
       <script dangerouslySetInnerHTML={{ __html: redirectScript }} />
-      <h1>News, explained</h1>
-      <p>Notícias explicadas</p>
-      <p>Choose a language to read the current edition.</p>
+      <h1>Notícias explicadas</h1>
       <p>
-        <a href={sectionPath("pt-br", "brazil")}>Português</a>
-        <a href={sectionPath("en", "brazil")}>English</a>
+        <a href={sectionPath("pt-br", "brazil")}>Brasil</a>
       </p>
     </main>
   );

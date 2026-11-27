@@ -113,7 +113,7 @@ def locale_block(model, locale):
     locales = model.get("locales") if isinstance(model.get("locales"), dict) else model
     if not isinstance(locales, dict):
         return {}
-    names = ("pt-br", "pt_br", "pt-BR", "pt", "portuguese") if locale == "pt-br" else ("en", "en-us", "en_us", "english")
+    names = ("pt-br", "pt_br", "pt-BR", "pt", "portuguese")
     for name in names:
         block = locales.get(name)
         if isinstance(block, dict):
@@ -174,7 +174,7 @@ def build_story(item, model, reviewed_at):
     locales = {}
     markdown = {}
     recovered = prose("\n\n".join(long_strings(model)))
-    for locale in ("pt-br", "en"):
+    for locale in ("pt-br",):
         copy = locale_block(model, locale)
         title = clean_line(copy.get("title") or item.get("title"))
         description = clean_line(copy.get("description") or item.get("summary"))
@@ -183,13 +183,13 @@ def build_story(item, model, reviewed_at):
         if count < MIN_WORDS and len(recovered.split()) >= MIN_WORDS:
             fields = {
                 "whatHappened": recovered,
-                "inPlainTerms": "The mechanism is the one stated in the account above.",
-                "whoMayBeAffected": "The people affected are the ones named in the account above.",
-                "whereThingsStand": "The stage is only what the account above states.",
+                "inPlainTerms": "O mecanismo é o que o relato acima descreve.",
+                "whoMayBeAffected": "As pessoas afetadas são as que o relato acima nomeia.",
+                "whereThingsStand": "O estágio é só o que o relato acima afirma.",
             }
             count = word_count(fields)
         if description and sentence_count(description) < 2:
-            description = description.rstrip(".") + ". The original report is linked from this story."
+            description = description.rstrip(".") + ". A reportagem original está ligada nesta matéria."
         if not title or sentence_count(description) < 2 or count < MIN_WORDS:
             keys = ",".join(copy.keys()) if copy else "missing"
             top = ",".join(model.keys())
@@ -309,22 +309,23 @@ def ask_groq(api_key, model_name, item, article):
         "article": article[:3500],
     }
     instructions = (
-        "Write a bilingual news explanation from the article. Return one JSON object only. "
+        "Write a news explanation in Portuguese (pt-BR) from the article. Return one JSON object only. "
         "Use only facts present in the article. Do not invent numbers, dates, names, or effects. "
         "If the decision stage is unclear, use under-discussion and say what is unknown. "
         "topics must be chosen from politics, education, social-rights. "
         "subtopics may be empty or chosen from women, lgbtqia, racial-equality, disability. "
         "countries are ISO codes or INT. stage is under-discussion, introduced, approved, or in-force. "
-        "Each locale description is exactly two sentences. "
-        "Together the four sections in each language run from 150 to 300 words. "
+        "The description is exactly two sentences. "
+        "Together the four sections run from 150 to 300 words. "
         "Explain an acronym the first time it appears. Do not paste long quotations. "
-        "Keys: topics, subtopics, countries, stage, locales.pt-br and locales.en. "
-        "Each locale has title, description, whatHappened, inPlainTerms, whoMayBeAffected, whereThingsStand."
+        "Write every string in Portuguese. "
+        "Keys: topics, subtopics, countries, stage, locales.pt-br. "
+        "locales.pt-br has title, description, whatHappened, inPlainTerms, whoMayBeAffected, whereThingsStand."
     )
     body = {
         "model": model_name,
         "temperature": 0.2,
-        "max_tokens": 4000,
+        "max_tokens": 2000,
         "reasoning_effort": "low",
         "response_format": {"type": "json_object"},
         "messages": [

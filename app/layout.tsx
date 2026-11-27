@@ -25,10 +25,10 @@ const sourceSans = localFont({
 
 export const metadata: Metadata = {
   metadataBase: new URL(getSiteUrl()),
-  title: { default: "News, explained", template: "%s" },
-  description: "Short explanations of news from Brazil and the world.",
+  title: { default: "Notícias explicadas", template: "%s" },
+  description: "Explicações curtas de notícias do Brasil e do mundo, com a fonte, a data e o estágio da decisão.",
   openGraph: {
-    images: [{ url: "/og/default.png", width: 1200, height: 630, alt: "News, explained" }],
+    images: [{ url: "/og/default.png", width: 1200, height: 630, alt: "Notícias explicadas" }],
     type: "website",
   },
   twitter: { card: "summary_large_image" },
@@ -38,13 +38,6 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="pt-BR" className={`${newsreader.variable} ${sourceSans.variable}`} suppressHydrationWarning>
-      <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: "document.documentElement.lang=location.pathname.indexOf('/en/')===0?'en':'pt-BR'",
-          }}
-        />
-      </head>
       <body>
         <ScrollRestore />
         {children}

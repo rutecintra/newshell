@@ -23,14 +23,13 @@ export async function sectionMetadata(locale: string, section: Section): Promise
       canonical: sectionPath(locale, section),
       languages: {
         "pt-BR": sectionPath("pt-br", section),
-        en: sectionPath("en", section),
       },
     },
     openGraph: {
       title,
       description: dict.siteDescription,
       url: sectionPath(locale, section),
-      locale: locale === "en" ? "en_US" : "pt_BR",
+      locale: "pt_BR",
     },
     robots: stories.some((story) => story.status === "published")
       ? { index: true, follow: true }
@@ -55,7 +54,7 @@ export async function SectionScreen({ locale, section }: { locale: string; secti
 
   return (
     <>
-      <SiteHeader locale={locale as Locale} dict={dict} path={sectionPath(locale, section)} />
+      <SiteHeader locale={locale as Locale} dict={dict} />
       <main id="content">
         <Feed
           locale={locale as Locale}

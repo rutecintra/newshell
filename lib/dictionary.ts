@@ -1,4 +1,4 @@
-import type dictionary from "@/locales/en.json";
+import type dictionary from "@/locales/pt-br.json";
 
 export type Dictionary = typeof dictionary;
-export type Locale = "pt-br" | "en";
+export type Locale = "pt-br";
