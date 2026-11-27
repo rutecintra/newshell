@@ -1,5 +1,28 @@
 [
   {
+    "at": "2026-11-27T04:24:42Z",
+    "feeds": [
+      {
+        "id": "agencia-brasil",
+        "status": "not-modified",
+        "items": 0,
+        "error": null
+      },
+      {
+        "id": "camara-noticias",
+        "status": "ok",
+        "items": 20,
+        "error": null
+      },
+      {
+        "id": "un-news",
+        "status": "ok",
+        "items": 30,
+        "error": null
+      }
+    ]
+  },
+  {
     "at": "2026-11-27T03:50:45Z",
     "feeds": [
       {
