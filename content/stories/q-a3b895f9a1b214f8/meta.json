@@ -1,0 +1,39 @@
+{
+  "id": "q-a3b895f9a1b214f8",
+  "status": "published",
+  "sections": [
+    "brazil"
+  ],
+  "countries": [
+    "BR"
+  ],
+  "topics": [
+    "politics"
+  ],
+  "subtopics": [],
+  "stage": "under-discussion",
+  "publishedAt": "2026-11-26T21:36:00Z",
+  "updatedAt": "2026-11-27T06:20:15Z",
+  "eventAt": null,
+  "dateBasis": "source-publication",
+  "featured": null,
+  "sources": [
+    {
+      "id": "report",
+      "outlet": "Agência Brasil",
+      "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/pix-tera-novas-regras-de-seguranca-e-melhorias-em-2027",
+      "language": "pt-br",
+      "kind": "report",
+      "publishedAt": "2026-11-26T21:36:00Z"
+    }
+  ],
+  "visuals": [],
+  "corrections": [],
+  "locales": {
+    "pt-br": {
+      "title": "Pix terá novas regras de segurança e melhorias em 2027",
+      "description": "O Pix terá novas funcionalidades e mecanismos de segurança em 2027. O Banco Central (BC) prepara mudanças que incluem o aprimoramento do Pix Automático, medidas para combater mensagens ofensivas enviadas junto às transferências e ferramentas para identificar fraudes e facilitar…. A reportagem original está ligada nesta matéria.",
+      "reviewedAt": "2026-11-27T06:20:15Z"
+    }
+  }
+}
