@@ -1,0 +1,39 @@
+{
+  "id": "q-145b45c0a0ba1337",
+  "status": "published",
+  "sections": [
+    "brazil"
+  ],
+  "countries": [
+    "BR"
+  ],
+  "topics": [
+    "education"
+  ],
+  "subtopics": [],
+  "stage": "under-discussion",
+  "publishedAt": "2026-11-26T18:21:00Z",
+  "updatedAt": "2026-11-27T06:20:15Z",
+  "eventAt": null,
+  "dateBasis": "source-publication",
+  "featured": null,
+  "sources": [
+    {
+      "id": "report",
+      "outlet": "Câmara dos Deputados",
+      "url": "https://www.camara.leg.br/noticias/1323237-comissao-aprova-projeto-que-preve-gratuidade-no-transporte-para-responsaveis-levarem-criancas-a-escola-publica",
+      "language": "pt-br",
+      "kind": "report",
+      "publishedAt": "2026-11-26T18:21:00Z"
+    }
+  ],
+  "visuals": [],
+  "corrections": [],
+  "locales": {
+    "pt-br": {
+      "title": "Comissão aprova projeto que prevê gratuidade no transporte para responsáveis levarem crianças à escola pública",
+      "description": "Proposta segue em análise na Câmara dos Deputados. A reportagem original está ligada nesta matéria.",
+      "reviewedAt": "2026-11-27T06:20:15Z"
+    }
+  }
+}
