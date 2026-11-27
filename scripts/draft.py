@@ -384,7 +384,12 @@ def reviewed_day(meta):
 
 
 def stories_on_day(metas, day):
-    return sum(1 for meta in metas if reviewed_day(meta) == day)
+    seen = set()
+    for index, meta in enumerate(metas):
+        if reviewed_day(meta) != day:
+            continue
+        seen.add(meta.get("id") or str(index))
+    return len(seen)
 
 
 def ask_groq(api_key, model_name, item, article):

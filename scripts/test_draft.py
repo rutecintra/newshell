@@ -117,6 +117,9 @@ class DraftTest(unittest.TestCase):
         self.assertEqual(reviewed_day(meta), "2026-11-27")
         early = {"locales": {"pt-br": {"reviewedAt": "2026-11-27T02:30:00Z"}}}
         self.assertEqual(stories_on_day([meta, early], "2026-11-27"), 1)
+        again = {"id": "q-1", "locales": meta["locales"]}
+        meta["id"] = "q-1"
+        self.assertEqual(stories_on_day([meta, again], "2026-11-27"), 1)
 
     def test_daily_limit_keeps_stories_already_written(self):
         first = item()
