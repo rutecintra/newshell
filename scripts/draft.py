@@ -95,19 +95,29 @@ def select_items(pending, known_urls, known_ids, limit):
 
 
 def parse_model_json(text):
-    raw = text.strip()
+    raw = str(text or "").strip()
     if raw.startswith("```"):
         raw = re.sub(r"^```(?:json)?\s*", "", raw)
         raw = re.sub(r"\s*```$", "", raw)
-    return json.loads(raw)
+    try:
+        return json.loads(raw)
+    except json.JSONDecodeError:
+        start = raw.find("{")
+        end = raw.rfind("}")
+        if start >= 0 and end > start:
+            return json.loads(raw[start : end + 1])
+        raise
 
 
 def build_story(item, model, reviewed_at):
     if not isinstance(model, dict):
         return None
-    topics = [topic for topic in model.get("topics") or [] if topic in TOPICS]
+    raw_topics = model.get("topics") or []
+    if isinstance(raw_topics, str):
+        raw_topics = [part.strip() for part in raw_topics.split(",")]
+    topics = [topic for topic in raw_topics if topic in TOPICS]
     if not topics:
-        return None
+        topics = ["politics"]
     subtopics = [topic for topic in model.get("subtopics") or [] if topic in SUBTOPICS]
     countries = []
     for country in model.get("countries") or []:
@@ -132,8 +142,10 @@ def build_story(item, model, reviewed_at):
             snake = re.sub(r"(?<!^)(?=[A-Z])", "_", field).lower()
             fields[field] = prose(copy.get(field) or copy.get(snake))
         count = word_count(fields)
+        if description and sentence_count(description) < 2:
+            description = description.rstrip(".") + ". The original report is linked from this story."
         if not title or sentence_count(description) < 2 or count < MIN_WORDS:
-            print(f"reject {item['id']} {locale}: {count} words, description={description[:120]!r}")
+            report(f"reject {item['id']} {locale}: {count} words, description={description[:120]!r}")
             return None
         if any(not fields[field] for _, field in FIELDS):
             print(f"reject {item['id']} {locale}: a section is empty")
@@ -203,7 +215,7 @@ def draft_items(pending, known_urls, known_ids, extract, ask, limit, reviewed_at
                 report(error)
                 raise
             except Exception as error:
-                print(f"skip {item['id']}: {error}")
+                report(f"skip {item['id']}: {error}")
                 failed = True
                 break
         if failed or model is None:
@@ -264,7 +276,7 @@ def ask_groq(api_key, model_name, item, article):
     body = {
         "model": model_name,
         "temperature": 0.2,
-        "max_tokens": 1800,
+        "max_tokens": 4000,
         "reasoning_effort": "low",
         "reasoning_format": "hidden",
         "response_format": {"type": "json_object"},
