@@ -1,0 +1,39 @@
+{
+  "id": "q-2662f04af74a1ed5",
+  "status": "published",
+  "sections": [
+    "world"
+  ],
+  "countries": [
+    "INT"
+  ],
+  "topics": [
+    "politics"
+  ],
+  "subtopics": [],
+  "stage": "under-discussion",
+  "publishedAt": "2026-11-26T12:00:00Z",
+  "updatedAt": "2026-11-27T06:20:15Z",
+  "eventAt": null,
+  "dateBasis": "source-publication",
+  "featured": null,
+  "sources": [
+    {
+      "id": "report",
+      "outlet": "UN News",
+      "url": "https://news.un.org/feed/view/en/story/2026/11/1168884",
+      "language": "en",
+      "kind": "report",
+      "publishedAt": "2026-11-26T12:00:00Z"
+    }
+  ],
+  "visuals": [],
+  "corrections": [],
+  "locales": {
+    "pt-br": {
+      "title": "Maritime trade stagnates amid geopolitical uncertainty",
+      "description": "Seaborne trade that underpins the global economy continues to slow, while disruption from conflict and climate-related factors is hitting least-developed economies and small island nations hardest, UN economists said on Thursday. A reportagem original está ligada nesta matéria.",
+      "reviewedAt": "2026-11-27T06:20:15Z"
+    }
+  }
+}
