@@ -4,6 +4,32 @@ A static bilingual edition of short news explanations. Brazil opens the site. Wo
 
 The stories in this repository are layout samples. They are not reviewed journalism.
 
+## Publication flow
+
+A headline becomes a public story only after a person checks the original report and merges it to `main`.
+
+```mermaid
+flowchart TD
+  sources["config/sources.json"] --> collect["collect workflow"]
+  collect --> queue["coleta branch: queue/pending.json"]
+  queue --> draft["draft workflow"]
+  draft --> extract["Trafilatura reads the article"]
+  extract --> groq["Groq writes the bilingual draft"]
+  groq --> pull["Pull request with status draft"]
+  pull --> review["Reviewer checks the original report"]
+  review --> publish["Change status to published and merge"]
+  publish --> ci["ci workflow"]
+  publish --> vercel["Vercel deploys main"]
+  vercel --> site["Public edition"]
+```
+
+1. **Collect.** The `collect` workflow runs at minutes 17 and 47, or from the Actions tab. It reads the feeds in `config/sources.json` and, when a headline is new, commits title, date, and link to `queue/pending.json` on the `coleta` branch. The article text stays out of the repository. This branch does not deploy.
+2. **Draft.** The `draft` workflow runs daily at 12:20 UTC, or from the Actions tab. It takes up to two queued headlines, extracts each article with Trafilatura, and asks Groq for the Portuguese and English explanation. It opens a pull request whose stories have `status: "draft"`. Drafts are not listed on the public site.
+3. **Review.** Open the original report linked in the story. Check the date, the numbers, and the stage. In `meta.json`, change `status` from `draft` to `published`.
+4. **Publish.** Merge the pull request into `main`. The `ci` workflow validates the content and builds the site. Vercel deploys `main`. The story appears on [newshell-eight.vercel.app](https://newshell-eight.vercel.app). A later correction stays at the same address.
+
+`GROQ_API_KEY` must exist as an Actions secret before the draft workflow can call Groq.
+
 ## Local check
 
 ```bash
