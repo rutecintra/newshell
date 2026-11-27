@@ -16,6 +16,7 @@ concurrency:
 jobs:
   draft:
     runs-on: ubuntu-latest
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
         with:
@@ -29,7 +30,7 @@ jobs:
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           GROQ_MODEL: openai/gpt-oss-20b
-          DRAFT_LIMIT: "1"
+          DRAFT_LIMIT: "30"
         run: |
           set +e
           python3 scripts/draft.py > draft.log 2>&1
@@ -37,29 +38,56 @@ jobs:
           cat draft.log
           {
             echo '```'
-            tail -n 60 draft.log
+            tail -n 120 draft.log
             echo '```'
           } >> "$GITHUB_STEP_SUMMARY"
           exit "$code"
-      - name: Open a pull request
+      - name: Open a pull request for each story
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          if [ -z "$(git status --porcelain -- content/stories)" ]; then
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          mapfile -t stories < <(git status --porcelain -- content/stories | awk '{print $NF}' | sed 's#/*$##')
+          if [ "${#stories[@]}" -eq 0 ]; then
             echo "No new drafts"
             exit 0
           fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          branch="draft/$(date -u +%Y%m%d%H%M%S)"
-          git checkout -b "$branch"
-          git add content/stories
-          git commit -m "feat: draft explanations"
-          git push origin "$branch"
-          if gh pr create --base main --head "$branch" --title "feat: draft explanations" --body "Draft explanations from the queue branch. Merging this pull request publishes the stories."; then
-            exit 0
-          fi
-          echo "::error::GitHub Actions could not open the pull request. In Settings, Actions, General, Workflow permissions, choose read and write and allow GitHub Actions to create pull requests."
-          echo "The draft branch is $branch"
-          echo "https://github.com/${{ github.repository }}/compare/main...${branch}?expand=1"
-          exit 1
+          work=$(mktemp -d)
+          for path in "${stories[@]}"; do
+            id=$(basename "$path")
+            cp -R "$path" "$work/$id"
+          done
+          git clean -fd content/stories
+          set +e
+          failed=0
+          for path in "$work"/*; do
+            id=$(basename "$path")
+            branch="draft/$id"
+            git checkout main || { failed=1; continue; }
+            git checkout -b "$branch" || { failed=1; continue; }
+            mkdir -p "content/stories/$id"
+            cp -R "$path/." "content/stories/$id/"
+            git add "content/stories/$id"
+            git commit -m "feat: draft explanations" || { failed=1; git checkout main; continue; }
+            if ! git push -u origin "$branch"; then
+              echo "::error::Could not push $branch"
+              failed=1
+              git checkout main
+              continue
+            fi
+            if gh pr create --base main --head "$branch" --title "feat: draft explanations" --body "Draft explanation from the queue branch. Merging this pull request publishes the story."; then
+              echo "opened $branch"
+            else
+              number=$(gh pr list --head "$branch" --base main --json number --jq '.[0].number')
+              if [ -n "$number" ] && [ "$number" != "null" ]; then
+                echo "pull request #$number already open for $branch"
+              else
+                echo "::error::GitHub Actions could not open the pull request for $branch. In Settings, Actions, General, Workflow permissions, choose read and write and allow GitHub Actions to create pull requests."
+                echo "https://github.com/${{ github.repository }}/compare/main...${branch}?expand=1"
+                failed=1
+              fi
+            fi
+            git checkout main
+          done
+          exit "$failed"

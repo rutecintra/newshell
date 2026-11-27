@@ -1,6 +1,15 @@
 import unittest
 
-from draft import build_story, draft_items, select_items, story_id
+from draft import (
+    GroqError,
+    build_story,
+    draft_items,
+    minute_wait_seconds,
+    reviewed_day,
+    select_items,
+    stories_on_day,
+    story_id,
+)
 
 
 def words(count):
@@ -88,6 +97,48 @@ class DraftTest(unittest.TestCase):
             reviewed_at="2026-11-27T04:00:00Z",
         )
         self.assertEqual([story["id"] for story in written], ["q-def456"])
+
+    def test_minute_wait_holds_until_tokens_return(self):
+        self.assertEqual(minute_wait_seconds({}), 0)
+        self.assertEqual(minute_wait_seconds({"x-ratelimit-remaining-tokens": "8000"}), 0)
+        self.assertEqual(
+            minute_wait_seconds(
+                {
+                    "x-ratelimit-remaining-tokens": "1000",
+                    "x-ratelimit-reset-tokens": "7.4s",
+                }
+            ),
+            7.4,
+        )
+        self.assertEqual(minute_wait_seconds({"x-ratelimit-remaining-tokens": "1000"}), 60)
+
+    def test_stories_on_day_uses_sao_paulo(self):
+        meta = {"locales": {"pt-br": {"reviewedAt": "2026-11-27T05:31:03Z"}}}
+        self.assertEqual(reviewed_day(meta), "2026-11-27")
+        early = {"locales": {"pt-br": {"reviewedAt": "2026-11-27T02:30:00Z"}}}
+        self.assertEqual(stories_on_day([meta, early], "2026-11-27"), 1)
+
+    def test_daily_limit_keeps_stories_already_written(self):
+        first = item()
+        second = dict(item(), id="def456", url="https://example.com/other")
+        calls = {"n": 0}
+
+        def ask(item, article):
+            calls["n"] += 1
+            if calls["n"] > 1:
+                raise GroqError(429, "Rate limit reached for tokens per day")
+            return model()
+
+        written = draft_items(
+            [first, second],
+            set(),
+            set(),
+            extract=lambda url: "word " * 500,
+            ask=ask,
+            limit=2,
+            reviewed_at="2026-11-27T04:00:00Z",
+        )
+        self.assertEqual([story["id"] for story in written], ["q-abc123"])
 
 
 if __name__ == "__main__":

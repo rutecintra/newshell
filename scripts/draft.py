@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Draft bilingual explanations from the queue branch.
+"""Draft Portuguese explanations from the queue branch.
 
 Trafilatura reads the article in memory. Groq writes the draft. The full
 article is not stored. Stories are written with status published. Merging the pull request
@@ -15,7 +15,7 @@ import subprocess
 import time
 import urllib.error
 import urllib.request
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -36,12 +36,20 @@ FIELDS = (
 )
 TAG = re.compile(r"<[^>]+>")
 ISO = re.compile(r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$")
+RESET = re.compile(r"([0-9]*\.?[0-9]+)(ms|s|m|h)")
+SAO_PAULO = timezone(timedelta(hours=-3))
+DAILY_CAP = 30
+# One call keeps max_tokens plus the article under the free 8,000 tokens per minute.
+MINUTE_BUDGET = 6000
+LAST_LIMIT = {}
 
 
 class GroqError(RuntimeError):
     def __init__(self, code, detail):
         super().__init__(f"Groq returned {code}: {detail}")
         self.code = code
+        text = str(detail).lower()
+        self.daily = code == 429 and ("per day" in text or "tokens per day" in text or "tpd" in text)
 
 
 def report(message):
@@ -236,7 +244,9 @@ def build_story(item, model, reviewed_at):
     return {"id": meta["id"], "meta": meta, "markdown": markdown}
 
 
-def draft_items(pending, known_urls, known_ids, extract, ask, limit, reviewed_at, max_attempts=6):
+def draft_items(pending, known_urls, known_ids, extract, ask, limit, reviewed_at, max_attempts=None):
+    if max_attempts is None:
+        max_attempts = limit + 10
     written = []
     attempts = 0
     candidates = select_items(pending, known_urls, known_ids, max(len(pending), 1))
@@ -250,18 +260,26 @@ def draft_items(pending, known_urls, known_ids, extract, ask, limit, reviewed_at
         attempts += 1
         model = None
         failed = False
-        for retry in range(3):
+        for retry in range(5):
             try:
                 model = ask(item, article)
                 break
             except GroqError as error:
-                if error.code == 429 and retry < 2:
-                    delay = retry_delay(error)
-                    print(f"rate limit on {item['id']}, waiting {delay:.0f}s")
-                    time.sleep(delay)
+                if error.code in (401, 403):
+                    report(error)
+                    raise
+                if error.daily:
+                    print(f"daily groq limit reached, kept {len(written)} stories")
+                    return written
+                if error.code == 429 and retry < 4:
+                    print(f"rate limit on {item['id']}, retry {retry + 1}")
                     continue
-                report(error)
-                raise
+                if error.code == 429:
+                    print(f"minute limit still blocked, kept {len(written)} stories")
+                    return written
+                report(f"skip {item['id']}: {error}")
+                failed = True
+                break
             except Exception as error:
                 report(f"skip {item['id']}: {error}")
                 failed = True
@@ -296,7 +314,77 @@ def retry_delay(error):
     match = re.search(r"try again in ([0-9.]+)s", str(error))
     if not match:
         return 15
-    return min(float(match.group(1)) + 1, 45)
+    return min(float(match.group(1)) + 1, 90)
+
+
+def parse_reset_seconds(value):
+    total = 0.0
+    found = False
+    for amount, unit in RESET.findall(str(value or "")):
+        found = True
+        number = float(amount)
+        total += {"ms": number / 1000, "s": number, "m": number * 60, "h": number * 3600}[unit]
+    if found:
+        return total
+    try:
+        return float(value)
+    except (TypeError, ValueError):
+        return None
+
+
+def limit_headers(headers):
+    found = {}
+    if not headers or not hasattr(headers, "get"):
+        return found
+    for name in ("x-ratelimit-remaining-tokens", "x-ratelimit-reset-tokens"):
+        value = headers.get(name)
+        if value:
+            found[name] = str(value)
+    return found
+
+
+def minute_wait_seconds(headers, needed=MINUTE_BUDGET):
+    if not headers:
+        return 0
+    raw = headers.get("x-ratelimit-remaining-tokens")
+    if raw in (None, ""):
+        return 60
+    try:
+        remaining = int(float(raw))
+    except ValueError:
+        return 60
+    if remaining >= needed:
+        return 0
+    reset = parse_reset_seconds(headers.get("x-ratelimit-reset-tokens"))
+    if reset is None:
+        return 60
+    return min(max(reset, 1), 90)
+
+
+def wait_for_minute(headers):
+    delay = minute_wait_seconds(headers)
+    if delay:
+        print(f"waiting {delay:.0f}s for the groq minute limit")
+        time.sleep(delay)
+
+
+def remember_limit(headers):
+    LAST_LIMIT.clear()
+    LAST_LIMIT.update(headers or {})
+
+
+def reviewed_day(meta):
+    locales = meta.get("locales") or {}
+    block = locales.get("pt-br") if isinstance(locales.get("pt-br"), dict) else {}
+    stamp = (block or {}).get("reviewedAt") or meta.get("updatedAt") or ""
+    if not ISO.match(stamp):
+        return ""
+    moment = datetime.strptime(stamp, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
+    return moment.astimezone(SAO_PAULO).date().isoformat()
+
+
+def stories_on_day(metas, day):
+    return sum(1 for meta in metas if reviewed_day(meta) == day)
 
 
 def ask_groq(api_key, model_name, item, article):
@@ -333,6 +421,7 @@ def ask_groq(api_key, model_name, item, article):
             {"role": "user", "content": json.dumps(prompt, ensure_ascii=False)},
         ],
     }
+    wait_for_minute(LAST_LIMIT)
     request = urllib.request.Request(
         GROQ_URL,
         data=json.dumps(body).encode("utf-8"),
@@ -344,9 +433,19 @@ def ask_groq(api_key, model_name, item, article):
     )
     try:
         with urllib.request.urlopen(request, timeout=90) as response:
+            found = limit_headers(response.headers)
+            if "x-ratelimit-remaining-tokens" not in found:
+                found["x-ratelimit-remaining-tokens"] = "0"
+                found["x-ratelimit-reset-tokens"] = "60s"
+            remember_limit(found)
             payload = json.loads(response.read().decode("utf-8"))
     except urllib.error.HTTPError as error:
         detail = error.read().decode("utf-8", errors="replace")[:500]
+        found = limit_headers(error.headers)
+        if error.code == 429 and "x-ratelimit-reset-tokens" not in found:
+            found["x-ratelimit-remaining-tokens"] = "0"
+            found["x-ratelimit-reset-tokens"] = f"{retry_delay(detail)}s"
+        remember_limit(found)
         raise GroqError(error.code, detail) from error
     message = payload["choices"][0]["message"]
     content = message.get("content")
@@ -363,8 +462,9 @@ def ask_groq(api_key, model_name, item, article):
 def known_source_urls(stories_root):
     urls = set()
     ids = set()
+    metas = []
     if not stories_root.exists():
-        return urls, ids
+        return urls, ids, metas
     for folder in stories_root.iterdir():
         if not folder.is_dir():
             continue
@@ -373,14 +473,15 @@ def known_source_urls(stories_root):
         if not meta_path.exists():
             continue
         meta = json.loads(meta_path.read_text(encoding="utf-8"))
+        metas.append(meta)
         for source in meta.get("sources") or []:
             if source.get("url"):
                 urls.add(source["url"])
-    return urls, ids
+    return urls, ids, metas
 
 
-def remote_draft_urls():
-    urls = set()
+def remote_draft_metas():
+    metas = []
     listed = subprocess.run(
         ["git", "ls-remote", "--heads", "origin", "draft/*"],
         capture_output=True,
@@ -414,10 +515,8 @@ def remote_draft_urls():
                 meta = json.loads(shown.stdout)
             except json.JSONDecodeError:
                 continue
-            for source in meta.get("sources") or []:
-                if source.get("url"):
-                    urls.add(source["url"])
-    return urls
+            metas.append(meta)
+    return metas
 
 
 def load_queue():
@@ -461,10 +560,23 @@ def main():
         report("Set GROQ_API_KEY to draft explanations. The free Groq plan is enough to start.")
         raise SystemExit(1)
     model_name = os.environ.get("GROQ_MODEL", DEFAULT_MODEL).strip() or DEFAULT_MODEL
-    limit = int(os.environ.get("DRAFT_LIMIT", "2"))
+    requested = int(os.environ.get("DRAFT_LIMIT", str(DAILY_CAP)))
     pending = load_queue()
-    urls, ids = known_source_urls(STORIES)
-    urls.update(remote_draft_urls())
+    urls, ids, local_metas = known_source_urls(STORIES)
+    remote_metas = remote_draft_metas()
+    for meta in remote_metas:
+        for source in meta.get("sources") or []:
+            if source.get("url"):
+                urls.add(source["url"])
+    day = datetime.now(SAO_PAULO).date().isoformat()
+    already = stories_on_day(local_metas + remote_metas, day)
+    room = max(0, DAILY_CAP - already)
+    print(f"{already} stories already drafted on {day}, room for {room}")
+    if room == 0:
+        print("daily cap reached")
+        return
+    limit = min(requested, room)
+    print(f"drafting up to {limit}")
     reviewed_at = now_iso()
 
     def ask(item, article):
