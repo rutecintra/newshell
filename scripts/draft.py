@@ -12,6 +12,7 @@ import json
 import os
 import re
 import subprocess
+import time
 import urllib.error
 import urllib.request
 from datetime import datetime, timezone
@@ -187,15 +188,25 @@ def draft_items(pending, known_urls, known_ids, extract, ask, limit, reviewed_at
             print(f"skip {item['id']}: article text is too short ({len(article)} chars)")
             continue
         attempts += 1
-        try:
-            model = ask(item, article)
-        except GroqError as error:
-            print(f"skip {item['id']}: {error}")
-            if error.code in (400, 401, 403, 404) or error.code == 200:
+        model = None
+        failed = False
+        for retry in range(3):
+            try:
+                model = ask(item, article)
+                break
+            except GroqError as error:
+                if error.code == 429 and retry < 2:
+                    delay = retry_delay(error)
+                    print(f"rate limit on {item['id']}, waiting {delay:.0f}s")
+                    time.sleep(delay)
+                    continue
+                report(error)
                 raise
-            continue
-        except Exception as error:
-            print(f"skip {item['id']}: {error}")
+            except Exception as error:
+                print(f"skip {item['id']}: {error}")
+                failed = True
+                break
+        if failed or model is None:
             continue
         built = build_story(item, model, reviewed_at)
         if not built:
@@ -221,6 +232,13 @@ def extract_article(url):
     ) or ""
 
 
+def retry_delay(error):
+    match = re.search(r"try again in ([0-9.]+)s", str(error))
+    if not match:
+        return 15
+    return min(float(match.group(1)) + 1, 45)
+
+
 def ask_groq(api_key, model_name, item, article):
     prompt = {
         "title": item.get("title"),
@@ -228,7 +246,7 @@ def ask_groq(api_key, model_name, item, article):
         "url": item.get("url"),
         "publishedAt": item.get("publishedAt"),
         "summary": item.get("summary"),
-        "article": article[:12000],
+        "article": article[:3500],
     }
     instructions = (
         "Write a bilingual news explanation from the article. Return one JSON object only. "
@@ -246,7 +264,7 @@ def ask_groq(api_key, model_name, item, article):
     body = {
         "model": model_name,
         "temperature": 0.2,
-        "max_tokens": 8000,
+        "max_tokens": 1800,
         "reasoning_effort": "low",
         "reasoning_format": "hidden",
         "response_format": {"type": "json_object"},
@@ -269,7 +287,6 @@ def ask_groq(api_key, model_name, item, article):
             payload = json.loads(response.read().decode("utf-8"))
     except urllib.error.HTTPError as error:
         detail = error.read().decode("utf-8", errors="replace")[:500]
-        report(f"Groq returned {error.code}: {detail}")
         raise GroqError(error.code, detail) from error
     message = payload["choices"][0]["message"]
     content = message.get("content")
