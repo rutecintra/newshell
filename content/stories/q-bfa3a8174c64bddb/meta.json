@@ -1,0 +1,42 @@
+{
+  "id": "q-bfa3a8174c64bddb",
+  "status": "published",
+  "sections": [
+    "brazil"
+  ],
+  "countries": [
+    "BR"
+  ],
+  "topics": [
+    "education",
+    "social-rights"
+  ],
+  "subtopics": [
+    "racial-equality"
+  ],
+  "stage": "under-discussion",
+  "publishedAt": "2026-11-26T19:29:00Z",
+  "updatedAt": "2026-11-27T06:20:15Z",
+  "eventAt": null,
+  "dateBasis": "source-publication",
+  "featured": null,
+  "sources": [
+    {
+      "id": "report",
+      "outlet": "Câmara dos Deputados",
+      "url": "https://www.camara.leg.br/noticias/1323293-comissao-aprova-projeto-que-cria-programa-de-aprendizagem-profissional-voltado-a-jovens-indigenas",
+      "language": "pt-br",
+      "kind": "report",
+      "publishedAt": "2026-11-26T19:29:00Z"
+    }
+  ],
+  "visuals": [],
+  "corrections": [],
+  "locales": {
+    "pt-br": {
+      "title": "Comissão aprova projeto que cria programa de aprendizagem profissional voltado a jovens indígenas",
+      "description": "Proposta segue em análise na Câmara dos Deputados. A reportagem original está ligada nesta matéria.",
+      "reviewedAt": "2026-11-27T06:20:15Z"
+    }
+  }
+}
