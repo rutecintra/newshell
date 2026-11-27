@@ -2,8 +2,6 @@
 
 A static bilingual edition of short news explanations. Brazil opens the site. World keeps up to three highlights, then the latest stories. Search and filters live in the page address.
 
-The stories in this repository are layout samples. They are not reviewed journalism.
-
 ## Publication flow
 
 A headline becomes a public story only after a person checks the original report and merges it to `main`.
