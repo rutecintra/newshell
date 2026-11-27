@@ -1,0 +1,39 @@
+{
+  "id": "q-f9a1c244b5613d21",
+  "status": "published",
+  "sections": [
+    "brazil"
+  ],
+  "countries": [
+    "BR"
+  ],
+  "topics": [
+    "politics"
+  ],
+  "subtopics": [],
+  "stage": "under-discussion",
+  "publishedAt": "2026-11-26T19:17:00Z",
+  "updatedAt": "2026-11-27T06:20:15Z",
+  "eventAt": null,
+  "dateBasis": "source-publication",
+  "featured": null,
+  "sources": [
+    {
+      "id": "report",
+      "outlet": "Câmara dos Deputados",
+      "url": "https://www.camara.leg.br/noticias/1323330-comissao-aprova-punicao-para-divulgacao-de-deepfakes-em-campanha-eleitoral",
+      "language": "pt-br",
+      "kind": "report",
+      "publishedAt": "2026-11-26T19:17:00Z"
+    }
+  ],
+  "visuals": [],
+  "corrections": [],
+  "locales": {
+    "pt-br": {
+      "title": "Comissão aprova punição para divulgação de deepfakes em campanha eleitoral",
+      "description": "Proposta segue em análise na Câmara dos Deputados. A reportagem original está ligada nesta matéria.",
+      "reviewedAt": "2026-11-27T06:20:15Z"
+    }
+  }
+}
