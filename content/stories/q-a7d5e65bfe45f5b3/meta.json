@@ -1,0 +1,39 @@
+{
+  "id": "q-a7d5e65bfe45f5b3",
+  "status": "published",
+  "sections": [
+    "brazil"
+  ],
+  "countries": [
+    "BR"
+  ],
+  "topics": [
+    "politics"
+  ],
+  "subtopics": [],
+  "stage": "under-discussion",
+  "publishedAt": "2026-11-26T22:54:00Z",
+  "updatedAt": "2026-11-27T06:20:15Z",
+  "eventAt": null,
+  "dateBasis": "source-publication",
+  "featured": null,
+  "sources": [
+    {
+      "id": "report",
+      "outlet": "Agência Brasil",
+      "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/bolsa-sobe-6-e-tem-maior-alta-desde-o-1o-turno-dolar-cai-r-574",
+      "language": "pt-br",
+      "kind": "report",
+      "publishedAt": "2026-11-26T22:54:00Z"
+    }
+  ],
+  "visuals": [],
+  "corrections": [],
+  "locales": {
+    "pt-br": {
+      "title": "Bolsa sobe 6% e tem maior alta desde o 1º turno; dólar cai a R$ 5,74",
+      "description": "O mercado financeiro brasileiro teve um dia de forte valorização nesta quinta-feira (26). O Ibovespa disparou cerca de 6%, registrando a maior alta diária desde o primeiro turno das eleições de 2026. O dólar recuou para abaixo de R$ 5,80 pela primeira vez em quase duas semanas.…",
+      "reviewedAt": "2026-11-27T06:20:15Z"
+    }
+  }
+}
