@@ -1,0 +1,39 @@
+{
+  "id": "q-f478a13f62a65e4a",
+  "status": "published",
+  "sections": [
+    "brazil"
+  ],
+  "countries": [
+    "BR"
+  ],
+  "topics": [
+    "social-rights"
+  ],
+  "subtopics": [],
+  "stage": "under-discussion",
+  "publishedAt": "2026-11-26T22:44:00Z",
+  "updatedAt": "2026-11-27T06:20:15Z",
+  "eventAt": null,
+  "dateBasis": "source-publication",
+  "featured": null,
+  "sources": [
+    {
+      "id": "report",
+      "outlet": "Agência Brasil",
+      "url": "https://agenciabrasil.ebc.com.br/saude/noticia/2026-11/inca-lanca-atlas-sobre-caracteristicas-do-cancer-em-brasileiros",
+      "language": "pt-br",
+      "kind": "report",
+      "publishedAt": "2026-11-26T22:44:00Z"
+    }
+  ],
+  "visuals": [],
+  "corrections": [],
+  "locales": {
+    "pt-br": {
+      "title": "Inca lança atlas sobre características do câncer em brasileiros",
+      "description": "Tomar chimarrão bem quente é um hábito de muita gente que vive no Sul do Brasil. Pesquisas sobre saúde, no entanto, têm demonstrado que tomar a bebida acima de 65°C com frequência pode causar câncer de esôfago. O desenvolvimento dos vários tipos de cânceres resulta de uma intera…",
+      "reviewedAt": "2026-11-27T06:20:15Z"
+    }
+  }
+}
