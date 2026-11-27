@@ -48,15 +48,4 @@ jobs:
           git add content/stories
           git commit -m "feat: draft explanations"
           git push origin "$branch"
-          gh pr create --base main --head "$branch" --title "feat: draft explanations" --body "$(cat <<'EOF'
-## Summary
-- Draft explanations from headlines already collected on the coleta branch.
-- Each story stays `draft`, so the public edition does not show it yet.
-
-## Review
-- [ ] Open the original report linked in the story
-- [ ] Check the date, the numbers, and the stage
-- [ ] Change `status` from `draft` to `published` before merging
-
-EOF
-)"
+          gh pr create --base main --head "$branch" --title "feat: draft explanations" --body "Draft explanations from the coleta queue. Each story stays draft until a reviewer checks the original report and changes status to published."
