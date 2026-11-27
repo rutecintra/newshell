@@ -2,8 +2,8 @@
 """Draft bilingual explanations from the queue branch.
 
 Trafilatura reads the article in memory. Groq writes the draft. The full
-article is not stored. Stories are written with status draft, so the public
-edition stays unchanged until a reviewer sets status to published.
+article is not stored. Stories are written with status published. Merging the pull request
+is the review, and that merge is what reaches the public edition.
 """
 
 from __future__ import annotations
@@ -208,7 +208,7 @@ def build_story(item, model, reviewed_at):
         )
     meta = {
         "id": story_id(item["id"]),
-        "status": "draft",
+        "status": "published",
         "sections": sections,
         "countries": countries,
         "topics": topics,
