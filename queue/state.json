@@ -1,22 +1,22 @@
 {
   "feeds": {
     "agencia-brasil": {
-      "etag": "\"1795741709-1\"",
-      "lastModified": "Fri, 27 Nov 2026 01:08:29 GMT",
+      "etag": "\"1795784727-1\"",
+      "lastModified": "Fri, 27 Nov 2026 13:05:27 GMT",
       "lastError": null,
-      "lastSuccessAt": "2026-11-27T03:50:44Z"
+      "lastSuccessAt": "2026-11-27T13:09:56Z"
     },
     "camara-noticias": {
       "etag": null,
       "lastModified": null,
       "lastError": null,
-      "lastSuccessAt": "2026-11-27T04:24:41Z"
+      "lastSuccessAt": "2026-11-27T13:09:58Z"
     },
     "un-news": {
       "etag": null,
       "lastModified": null,
       "lastError": null,
-      "lastSuccessAt": "2026-11-27T04:24:42Z"
+      "lastSuccessAt": "2026-11-27T13:09:58Z"
     }
   }
 }

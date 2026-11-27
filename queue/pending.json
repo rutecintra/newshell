@@ -1,5 +1,173 @@
 [
   {
+    "id": "faf4564bb197c752",
+    "sourceId": "agencia-brasil",
+    "outlet": "Agência Brasil",
+    "title": "Taxa de desemprego fica em 5,1% no trimestre encerrado em outubro",
+    "summary": "A taxa de desocupação, também chamada de taxa de desemprego, ficou em 5,1% no trimestre encerrado em outubro deste ano. O dado, da Pesquisa Nacional por Amostra de Domicílio (Pnad) Contínua, foi divulgado nesta sexta-feira (27) pelo Instituto Brasileiro de Geografia e Estatístic…",
+    "url": "https://agenciabrasil.ebc.com.br/direitos-humanos/noticia/2026-11/taxa-de-desemprego-fica-em-51-no-trimestre-encerrado-em-outubro",
+    "language": "pt-br",
+    "coverage": [
+      "brazil"
+    ],
+    "publishedAt": "2026-11-27T12:30:00Z",
+    "collectedAt": "2026-11-27T13:09:56Z"
+  },
+  {
+    "id": "16f51c9b5dc763aa",
+    "sourceId": "agencia-brasil",
+    "outlet": "Agência Brasil",
+    "title": "Rádio Nacional transmite Fluminense e Cruzeiro pelo Brasileirão",
+    "summary": "As emoções do duelo entre Fluminense e Cruzeiro, válido pela 37ª rodada do Campeonato Brasileiro Série A 2026, ganham transmissão na Rádio Nacional, emissora pública da Empresa Brasil de Comunicação, nesta sexta-feira (27), a partir das 20h. A bola rola em pleno Maracanã, no Rio…",
+    "url": "https://agenciabrasil.ebc.com.br/esportes/noticia/2026-11/radio-nacional-transmite-fluminense-e-cruzeiro-pelo-brasileirao",
+    "language": "pt-br",
+    "coverage": [
+      "brazil"
+    ],
+    "publishedAt": "2026-11-27T12:02:00Z",
+    "collectedAt": "2026-11-27T13:09:56Z"
+  },
+  {
+    "id": "ddb448ec69f704b4",
+    "sourceId": "agencia-brasil",
+    "outlet": "Agência Brasil",
+    "title": "Sul do país tem alerta de perigo de chuvas intensas",
+    "summary": "O Instituto Nacional de Meteorologia (Inmet) divulgou alerta de perigo de chuvas intensas para áreas do sul do país. A previsão é de um volume de precipitação entre 30 e 60 milímetros (mm) por hora e entre 50 e 100 mm por dia, com ventos intensos de até 100 km/h. Há, segundo o I…",
+    "url": "https://agenciabrasil.ebc.com.br/meio-ambiente/noticia/2026-11/sul-do-pais-tem-alerta-de-perigo-de-chuvas-intensas",
+    "language": "pt-br",
+    "coverage": [
+      "brazil"
+    ],
+    "publishedAt": "2026-11-27T12:00:00Z",
+    "collectedAt": "2026-11-27T13:09:56Z"
+  },
+  {
+    "id": "2cfb2012ba1f2990",
+    "sourceId": "camara-noticias",
+    "outlet": "Câmara dos Deputados",
+    "title": "Projeto estabelece normas de segurança para trabalhadores da saúde e da educação",
+    "summary": "Texto em análise na Câmara prevê prevenção à violência e ao assédio, canais de denúncia e proteção contra retaliações funcionais em unidades públicas e privadas",
+    "url": "https://www.camara.leg.br/noticias/1312313-projeto-estabelece-normas-de-seguranca-para-trabalhadores-da-saude-e-da-educacao",
+    "language": "pt-br",
+    "coverage": [
+      "brazil"
+    ],
+    "publishedAt": "2026-11-27T12:00:00Z",
+    "collectedAt": "2026-11-27T13:09:58Z"
+  },
+  {
+    "id": "8b26d6b7cd6d4bd7",
+    "sourceId": "un-news",
+    "outlet": "UN News",
+    "title": "Putting survivors at the centre of gender-based violence services",
+    "summary": "Reaching out for help can be an enormous step for survivors of gender-based violence (GBV), and what happens after walking through the doors of a support service can shape the path towards recovery and safety",
+    "url": "https://news.un.org/feed/view/en/story/2026/11/1168885",
+    "language": "en",
+    "coverage": [
+      "world"
+    ],
+    "publishedAt": "2026-11-27T12:00:00Z",
+    "collectedAt": "2026-11-27T13:09:58Z"
+  },
+  {
+    "id": "c9585026bfdc37e2",
+    "sourceId": "agencia-brasil",
+    "outlet": "Agência Brasil",
+    "title": "Receita Federal no Rio apreende encomendas com drogas nos Correios",
+    "summary": "A Receita Federal apreendeu, no Centro de Distribuição dos Correios no Rio de Janeiro, nessa quinta-feira (26), 25 encomendas com substâncias entorpecentes, avaliadas em R$ 800 mil. A ação contou com o apoio do cão de faro Abby, especializado na detecção de drogas. Durante a açã…",
+    "url": "https://agenciabrasil.ebc.com.br/geral/noticia/2026-11/receita-federal-no-rio-apreende-encomendas-com-drogas-nos-correios",
+    "language": "pt-br",
+    "coverage": [
+      "brazil"
+    ],
+    "publishedAt": "2026-11-27T11:48:00Z",
+    "collectedAt": "2026-11-27T13:09:56Z"
+  },
+  {
+    "id": "5f4b95b0aa6fb96b",
+    "sourceId": "agencia-brasil",
+    "outlet": "Agência Brasil",
+    "title": "Meninas do Tarumã superam incertezas por oportunidade na Copinha F",
+    "summary": "A goleira Duda estava um misto de nervosismo, cansaço e emoção. Risos tímidos intercalados a agradecimentos e pausas para conter as lágrimas diante dos microfones, entre eles o da TV Brasil . A primeira entrevista da vida, segundo ela própria, terminou com festa e um grande abra…",
+    "url": "https://agenciabrasil.ebc.com.br/esportes/noticia/2026-11/meninas-do-taruma-superam-incertezas-por-oportunidade-na-copinha-f",
+    "language": "pt-br",
+    "coverage": [
+      "brazil"
+    ],
+    "publishedAt": "2026-11-27T11:32:00Z",
+    "collectedAt": "2026-11-27T13:09:56Z"
+  },
+  {
+    "id": "a3602068be121379",
+    "sourceId": "agencia-brasil",
+    "outlet": "Agência Brasil",
+    "title": "Licenciaturas crescem e somam 1,7 milhão de matrículas em 2025",
+    "summary": "O Censo da Educação Superior revelou que os cursos de formação de professores apresentaram crescimento no número de matrículas e ingressos ao longo dos últimos dez anos. De 2015 a 2025, as matrículas registradas nas licenciaturas passaram de 1,47 milhão para 1,77 milhão, sendo q…",
+    "url": "https://agenciabrasil.ebc.com.br/educacao/noticia/2026-11/licenciaturas-crescem-e-somam-17-milhao-de-matriculas-em-2025",
+    "language": "pt-br",
+    "coverage": [
+      "brazil"
+    ],
+    "publishedAt": "2026-11-27T11:22:00Z",
+    "collectedAt": "2026-11-27T13:09:56Z"
+  },
+  {
+    "id": "7009cee773c7b24a",
+    "sourceId": "agencia-brasil",
+    "outlet": "Agência Brasil",
+    "title": "Super El Niño é o primeiro de uma série, alerta climatologista",
+    "summary": "O Super El Niño, versão mais intensa do fenômeno climático que atinge o planeta e deve se estender pelo verão, é apenas o primeiro de uma série que atingirá os países nos próximos anos. A afirmação é do climatologista e meteorologista Paulo Nobre, pesquisador sênior do Instituto…",
+    "url": "https://agenciabrasil.ebc.com.br/meio-ambiente/noticia/2026-11/super-el-nino-e-o-primeiro-de-uma-serie-alerta-climatologista",
+    "language": "pt-br",
+    "coverage": [
+      "brazil"
+    ],
+    "publishedAt": "2026-11-27T11:15:00Z",
+    "collectedAt": "2026-11-27T13:09:56Z"
+  },
+  {
+    "id": "68f9d946113ad999",
+    "sourceId": "agencia-brasil",
+    "outlet": "Agência Brasil",
+    "title": "Equador: Noboa tenta se consolidar em eleição com oposição reduzida",
+    "summary": "No próximo domingo (29), 13,8 milhões de eleitores do Equador vão às urnas para eleger 23 governadores de províncias, 222 prefeitos, centenas de legisladores locais e os sete membros do Conselho de Participação Cidadã e Controle Social . O órgão é responsável por nomear cargos c…",
+    "url": "https://agenciabrasil.ebc.com.br/internacional/noticia/2026-11/equador-noboa-tenta-se-consolidar-em-eleicao-com-oposicao-reduzida",
+    "language": "pt-br",
+    "coverage": [
+      "brazil"
+    ],
+    "publishedAt": "2026-11-27T11:00:00Z",
+    "collectedAt": "2026-11-27T13:09:56Z"
+  },
+  {
+    "id": "663e21351d0c46a5",
+    "sourceId": "agencia-brasil",
+    "outlet": "Agência Brasil",
+    "title": "CMN amplia em R$ 1 bilhão limite de crédito a estados e municípios",
+    "summary": "Os estados, os municípios e o Distrito Federal terão R$ 1 bilhão a mais para pegarem emprestados no sistema financeiro até o fim do ano. Em reunião extraordinária, o Conselho Monetário Nacional (CMN) aprovou, na noite de quinta-feira (26), a ampliação do limite global para opera…",
+    "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/cmn-amplia-em-r-1-bilhao-limite-de-credito-estados-e-municipios",
+    "language": "pt-br",
+    "coverage": [
+      "brazil"
+    ],
+    "publishedAt": "2026-11-27T10:48:00Z",
+    "collectedAt": "2026-11-27T13:09:56Z"
+  },
+  {
+    "id": "e5781bbf49b2217a",
+    "sourceId": "agencia-brasil",
+    "outlet": "Agência Brasil",
+    "title": "Expectativa de vida no Brasil sobe para 76,9 anos, diz IBGE",
+    "summary": "A expectativa de vida do brasileiro ao nascer, em 2025, era de 76,9 anos, de acordo com dados divulgados pelo Instituto Brasileiro de Geografia e Estatística (IBGE). Em 2024, a estimativa era de 76,6 anos . Os dados completos serão divulgados na manhã desta sexta-feira (27) pelo…",
+    "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/expectativa-de-vida-no-brasil-sobe-para-769-anos-diz-ibge",
+    "language": "pt-br",
+    "coverage": [
+      "brazil"
+    ],
+    "publishedAt": "2026-11-27T10:37:00Z",
+    "collectedAt": "2026-11-27T13:09:56Z"
+  },
+  {
     "id": "fcd9c795a8a97938",
     "sourceId": "agencia-brasil",
     "outlet": "Agência Brasil",
@@ -109,7 +277,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-26T22:37:00Z",
-    "collectedAt": "2026-11-27T04:24:41Z"
+    "collectedAt": "2026-11-27T13:09:58Z"
   },
   {
     "id": "49e51f63a7ab159e",
@@ -137,7 +305,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-26T22:14:00Z",
-    "collectedAt": "2026-11-27T04:24:41Z"
+    "collectedAt": "2026-11-27T13:09:58Z"
   },
   {
     "id": "df23af778bcee8c8",
@@ -165,7 +333,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-26T22:05:00Z",
-    "collectedAt": "2026-11-27T04:24:41Z"
+    "collectedAt": "2026-11-27T13:09:58Z"
   },
   {
     "id": "5baea50728e685d6",
@@ -179,7 +347,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-26T21:46:00Z",
-    "collectedAt": "2026-11-27T04:24:41Z"
+    "collectedAt": "2026-11-27T13:09:58Z"
   },
   {
     "id": "a3b895f9a1b214f8",
@@ -207,7 +375,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-26T21:03:00Z",
-    "collectedAt": "2026-11-27T04:24:41Z"
+    "collectedAt": "2026-11-27T13:09:58Z"
   },
   {
     "id": "646f727b597a7cd8",
@@ -221,13 +389,13 @@
       "brazil"
     ],
     "publishedAt": "2026-11-26T20:03:00Z",
-    "collectedAt": "2026-11-27T04:24:41Z"
+    "collectedAt": "2026-11-27T13:09:58Z"
   },
   {
     "id": "8672d8126a60429a",
     "sourceId": "camara-noticias",
     "outlet": "Câmara dos Deputados",
-    "title": "Comissão Mista aprova relatório preliminar do Orçamento de 2027",
+    "title": "Comissão mista aprova relatório preliminar do Orçamento de 2027",
     "summary": "Foram apresentadas 8.212 emendas às despesas do Orçamento de 2027, num total de R$ 286,3 bilhões",
     "url": "https://www.camara.leg.br/noticias/1323430-comissao-mista-aprova-relatorio-preliminar-do-orcamento-de-2027",
     "language": "pt-br",
@@ -235,7 +403,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-26T19:44:00Z",
-    "collectedAt": "2026-11-27T04:24:41Z"
+    "collectedAt": "2026-11-27T13:09:58Z"
   },
   {
     "id": "bfa3a8174c64bddb",
@@ -249,7 +417,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-26T19:29:00Z",
-    "collectedAt": "2026-11-27T04:24:41Z"
+    "collectedAt": "2026-11-27T13:09:58Z"
   },
   {
     "id": "00bd1efa51f253d1",
@@ -263,7 +431,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-26T19:19:00Z",
-    "collectedAt": "2026-11-27T04:24:41Z"
+    "collectedAt": "2026-11-27T13:09:58Z"
   },
   {
     "id": "f9a1c244b5613d21",
@@ -277,7 +445,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-26T19:17:00Z",
-    "collectedAt": "2026-11-27T04:24:41Z"
+    "collectedAt": "2026-11-27T13:09:58Z"
   },
   {
     "id": "b0014920a4907221",
@@ -291,7 +459,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-26T19:09:00Z",
-    "collectedAt": "2026-11-27T04:24:41Z"
+    "collectedAt": "2026-11-27T13:09:58Z"
   },
   {
     "id": "145b45c0a0ba1337",
@@ -305,7 +473,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-26T18:21:00Z",
-    "collectedAt": "2026-11-27T04:24:41Z"
+    "collectedAt": "2026-11-27T13:09:58Z"
   },
   {
     "id": "db1435cd6ef3b561",
@@ -319,7 +487,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-26T15:00:00Z",
-    "collectedAt": "2026-11-27T04:24:41Z"
+    "collectedAt": "2026-11-27T13:09:58Z"
   },
   {
     "id": "1f676a1fc4e9cbf3",
@@ -333,7 +501,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-26T14:53:00Z",
-    "collectedAt": "2026-11-27T04:24:41Z"
+    "collectedAt": "2026-11-27T13:09:58Z"
   },
   {
     "id": "e4c3e5d2894167fe",
@@ -347,7 +515,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-26T14:49:00Z",
-    "collectedAt": "2026-11-27T04:24:41Z"
+    "collectedAt": "2026-11-27T13:09:58Z"
   },
   {
     "id": "b585d9356037fed9",
@@ -361,7 +529,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-26T14:41:00Z",
-    "collectedAt": "2026-11-27T04:24:41Z"
+    "collectedAt": "2026-11-27T13:09:58Z"
   },
   {
     "id": "9be516e7fc14c128",
@@ -375,7 +543,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-26T12:26:00Z",
-    "collectedAt": "2026-11-27T04:24:41Z"
+    "collectedAt": "2026-11-27T13:09:58Z"
   },
   {
     "id": "1e316631af887d97",
@@ -389,7 +557,7 @@
       "world"
     ],
     "publishedAt": "2026-11-26T12:00:00Z",
-    "collectedAt": "2026-11-27T04:24:42Z"
+    "collectedAt": "2026-11-27T13:09:58Z"
   },
   {
     "id": "2662f04af74a1ed5",
@@ -403,7 +571,7 @@
       "world"
     ],
     "publishedAt": "2026-11-26T12:00:00Z",
-    "collectedAt": "2026-11-27T04:24:42Z"
+    "collectedAt": "2026-11-27T13:09:58Z"
   },
   {
     "id": "5ae09920b1227639",
@@ -417,7 +585,7 @@
       "world"
     ],
     "publishedAt": "2026-11-26T12:00:00Z",
-    "collectedAt": "2026-11-27T04:24:42Z"
+    "collectedAt": "2026-11-27T13:09:58Z"
   },
   {
     "id": "290c06ac4595e73f",
@@ -431,7 +599,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-26T11:08:00Z",
-    "collectedAt": "2026-11-27T04:24:41Z"
+    "collectedAt": "2026-11-27T13:09:58Z"
   },
   {
     "id": "bd42b14d07f3adec",
@@ -445,7 +613,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-26T11:00:00Z",
-    "collectedAt": "2026-11-27T04:24:41Z"
+    "collectedAt": "2026-11-27T13:09:58Z"
   },
   {
     "id": "0f896b7c4e8b61c6",
@@ -473,7 +641,7 @@
       "world"
     ],
     "publishedAt": "2026-11-25T12:00:00Z",
-    "collectedAt": "2026-11-27T04:24:42Z"
+    "collectedAt": "2026-11-27T13:09:58Z"
   },
   {
     "id": "c964e4b3db3ecb1a",
@@ -487,7 +655,7 @@
       "world"
     ],
     "publishedAt": "2026-11-25T12:00:00Z",
-    "collectedAt": "2026-11-27T04:24:42Z"
+    "collectedAt": "2026-11-27T13:09:58Z"
   },
   {
     "id": "1082f43610c695b8",
@@ -501,7 +669,7 @@
       "world"
     ],
     "publishedAt": "2026-11-25T12:00:00Z",
-    "collectedAt": "2026-11-27T04:24:42Z"
+    "collectedAt": "2026-11-27T13:09:58Z"
   },
   {
     "id": "8e3c2ec7f7ddac1a",
@@ -515,7 +683,7 @@
       "world"
     ],
     "publishedAt": "2026-11-25T12:00:00Z",
-    "collectedAt": "2026-11-27T04:24:42Z"
+    "collectedAt": "2026-11-27T13:09:58Z"
   },
   {
     "id": "f0e5e9ff176e0945",
@@ -529,7 +697,7 @@
       "world"
     ],
     "publishedAt": "2026-11-25T12:00:00Z",
-    "collectedAt": "2026-11-27T04:24:42Z"
+    "collectedAt": "2026-11-27T13:09:58Z"
   },
   {
     "id": "c47d594f2fe1e10e",
@@ -543,7 +711,7 @@
       "world"
     ],
     "publishedAt": "2026-11-25T12:00:00Z",
-    "collectedAt": "2026-11-27T04:24:42Z"
+    "collectedAt": "2026-11-27T13:09:58Z"
   },
   {
     "id": "3db522a7a8e93809",
@@ -557,7 +725,7 @@
       "world"
     ],
     "publishedAt": "2026-11-24T12:00:00Z",
-    "collectedAt": "2026-11-27T04:24:42Z"
+    "collectedAt": "2026-11-27T13:09:58Z"
   },
   {
     "id": "58b673023dcf1630",
@@ -571,7 +739,7 @@
       "world"
     ],
     "publishedAt": "2026-11-24T12:00:00Z",
-    "collectedAt": "2026-11-27T04:24:42Z"
+    "collectedAt": "2026-11-27T13:09:58Z"
   },
   {
     "id": "14db9f0896734b67",
@@ -585,7 +753,7 @@
       "world"
     ],
     "publishedAt": "2026-11-24T12:00:00Z",
-    "collectedAt": "2026-11-27T04:24:42Z"
+    "collectedAt": "2026-11-27T13:09:58Z"
   },
   {
     "id": "7d8cc547f7c9a021",
@@ -599,7 +767,7 @@
       "world"
     ],
     "publishedAt": "2026-11-24T12:00:00Z",
-    "collectedAt": "2026-11-27T04:24:42Z"
+    "collectedAt": "2026-11-27T13:09:58Z"
   },
   {
     "id": "a44f2907ccd9b397",
@@ -613,7 +781,7 @@
       "world"
     ],
     "publishedAt": "2026-11-24T12:00:00Z",
-    "collectedAt": "2026-11-27T04:24:42Z"
+    "collectedAt": "2026-11-27T13:09:58Z"
   },
   {
     "id": "67a38418993d24fc",
@@ -627,7 +795,7 @@
       "world"
     ],
     "publishedAt": "2026-11-24T12:00:00Z",
-    "collectedAt": "2026-11-27T04:24:42Z"
+    "collectedAt": "2026-11-27T13:09:58Z"
   },
   {
     "id": "f12aebcb27fa9ccc",
@@ -641,7 +809,7 @@
       "world"
     ],
     "publishedAt": "2026-11-24T12:00:00Z",
-    "collectedAt": "2026-11-27T04:24:42Z"
+    "collectedAt": "2026-11-27T13:09:58Z"
   },
   {
     "id": "23ce2785727fbeec",
@@ -655,7 +823,7 @@
       "world"
     ],
     "publishedAt": "2026-11-23T12:00:00Z",
-    "collectedAt": "2026-11-27T04:24:42Z"
+    "collectedAt": "2026-11-27T13:09:58Z"
   },
   {
     "id": "16ee36335eaaf1cb",
@@ -669,7 +837,7 @@
       "world"
     ],
     "publishedAt": "2026-11-23T12:00:00Z",
-    "collectedAt": "2026-11-27T04:24:42Z"
+    "collectedAt": "2026-11-27T13:09:58Z"
   },
   {
     "id": "095442ef4a2257f8",
@@ -683,7 +851,7 @@
       "world"
     ],
     "publishedAt": "2026-11-23T12:00:00Z",
-    "collectedAt": "2026-11-27T04:24:42Z"
+    "collectedAt": "2026-11-27T13:09:58Z"
   },
   {
     "id": "a68db2f1d7afa781",
@@ -697,7 +865,7 @@
       "world"
     ],
     "publishedAt": "2026-11-23T12:00:00Z",
-    "collectedAt": "2026-11-27T04:24:42Z"
+    "collectedAt": "2026-11-27T13:09:58Z"
   },
   {
     "id": "307e98b05da69a02",
@@ -711,7 +879,7 @@
       "world"
     ],
     "publishedAt": "2026-11-23T12:00:00Z",
-    "collectedAt": "2026-11-27T04:24:42Z"
+    "collectedAt": "2026-11-27T13:09:58Z"
   },
   {
     "id": "180a5dc2f3a58b22",
@@ -725,7 +893,7 @@
       "world"
     ],
     "publishedAt": "2026-11-22T12:00:00Z",
-    "collectedAt": "2026-11-27T04:24:42Z"
+    "collectedAt": "2026-11-27T13:09:58Z"
   },
   {
     "id": "2f16e29e794aeda1",
@@ -739,7 +907,7 @@
       "world"
     ],
     "publishedAt": "2026-11-22T12:00:00Z",
-    "collectedAt": "2026-11-27T04:24:42Z"
+    "collectedAt": "2026-11-27T13:09:58Z"
   },
   {
     "id": "d8cb37b6ee449ecf",
@@ -753,7 +921,7 @@
       "world"
     ],
     "publishedAt": "2026-11-22T12:00:00Z",
-    "collectedAt": "2026-11-27T04:24:42Z"
+    "collectedAt": "2026-11-27T13:09:58Z"
   },
   {
     "id": "1651c68df9d73951",
@@ -767,7 +935,7 @@
       "world"
     ],
     "publishedAt": "2026-11-21T12:00:00Z",
-    "collectedAt": "2026-11-27T04:24:42Z"
+    "collectedAt": "2026-11-27T13:09:58Z"
   },
   {
     "id": "0dccb4dc48ad0533",
@@ -781,7 +949,7 @@
       "world"
     ],
     "publishedAt": "2026-11-21T12:00:00Z",
-    "collectedAt": "2026-11-27T04:24:42Z"
+    "collectedAt": "2026-11-27T13:09:58Z"
   },
   {
     "id": "c8ebbd1cbde74c03",
@@ -795,7 +963,7 @@
       "world"
     ],
     "publishedAt": "2026-11-20T12:00:00Z",
-    "collectedAt": "2026-11-27T04:24:42Z"
+    "collectedAt": "2026-11-27T13:09:58Z"
   },
   {
     "id": "1e3300495dbd72fb",
@@ -809,7 +977,7 @@
       "world"
     ],
     "publishedAt": "2026-11-20T12:00:00Z",
-    "collectedAt": "2026-11-27T04:24:42Z"
+    "collectedAt": "2026-11-27T13:09:58Z"
   },
   {
     "id": "1e33a84d56832480",
@@ -823,7 +991,7 @@
       "world"
     ],
     "publishedAt": "2026-11-20T12:00:00Z",
-    "collectedAt": "2026-11-27T04:24:42Z"
+    "collectedAt": "2026-11-27T13:09:58Z"
   },
   {
     "id": "689337f466be3e7c",
