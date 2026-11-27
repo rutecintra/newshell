@@ -1,0 +1,41 @@
+{
+  "id": "q-00bd1efa51f253d1",
+  "status": "published",
+  "sections": [
+    "brazil"
+  ],
+  "countries": [
+    "BR"
+  ],
+  "topics": [
+    "social-rights"
+  ],
+  "subtopics": [
+    "disability"
+  ],
+  "stage": "under-discussion",
+  "publishedAt": "2026-11-26T19:19:00Z",
+  "updatedAt": "2026-11-27T06:20:15Z",
+  "eventAt": null,
+  "dateBasis": "source-publication",
+  "featured": null,
+  "sources": [
+    {
+      "id": "report",
+      "outlet": "Câmara dos Deputados",
+      "url": "https://www.camara.leg.br/noticias/1323334-comissao-aprova-estimulo-a-conteudos-sobre-acessibilidade-na-comunicacao-publica",
+      "language": "pt-br",
+      "kind": "report",
+      "publishedAt": "2026-11-26T19:19:00Z"
+    }
+  ],
+  "visuals": [],
+  "corrections": [],
+  "locales": {
+    "pt-br": {
+      "title": "Comissão aprova estímulo a conteúdos sobre acessibilidade na comunicação pública",
+      "description": "Proposta segue em análise na Câmara dos Deputados. A reportagem original está ligada nesta matéria.",
+      "reviewedAt": "2026-11-27T06:20:15Z"
+    }
+  }
+}
