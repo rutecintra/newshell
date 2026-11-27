@@ -1,0 +1,39 @@
+{
+  "id": "q-b14a8c2c65d0bc1e",
+  "status": "published",
+  "sections": [
+    "brazil"
+  ],
+  "countries": [
+    "BR"
+  ],
+  "topics": [
+    "education"
+  ],
+  "subtopics": [],
+  "stage": "under-discussion",
+  "publishedAt": "2026-11-26T22:37:00Z",
+  "updatedAt": "2026-11-27T06:20:15Z",
+  "eventAt": null,
+  "dateBasis": "source-publication",
+  "featured": null,
+  "sources": [
+    {
+      "id": "report",
+      "outlet": "Câmara dos Deputados",
+      "url": "https://www.camara.leg.br/noticias/1323540-educadores-ambientais-pedem-reforco-de-orcamento-e-politicas-publicas",
+      "language": "pt-br",
+      "kind": "report",
+      "publishedAt": "2026-11-26T22:37:00Z"
+    }
+  ],
+  "visuals": [],
+  "corrections": [],
+  "locales": {
+    "pt-br": {
+      "title": "Educadores ambientais pedem reforço de orçamento e políticas públicas",
+      "description": "Ministério do Meio Ambiente garantiu parceria do governo com os movimentos sociais na busca de soluções. A reportagem original está ligada nesta matéria.",
+      "reviewedAt": "2026-11-27T06:20:15Z"
+    }
+  }
+}
