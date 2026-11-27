@@ -1,0 +1,34 @@
+{
+  "sources": [
+    {
+      "id": "agencia-brasil",
+      "outlet": "Agência Brasil",
+      "feedUrl": "https://agenciabrasil.ebc.com.br/rss/ultimasnoticias/feed.xml",
+      "language": "pt-br",
+      "coverage": ["brazil"],
+      "topics": ["politics", "education", "social-rights"],
+      "termsNote": "Public news agency RSS. The collector stores the headline, date, and link only.",
+      "termsCheckedAt": "2026-11-26"
+    },
+    {
+      "id": "camara-noticias",
+      "outlet": "Câmara dos Deputados",
+      "feedUrl": "https://www.camara.leg.br/noticias/rss/ultimas-noticias",
+      "language": "pt-br",
+      "coverage": ["brazil"],
+      "topics": ["politics", "education", "social-rights"],
+      "termsNote": "Public legislative RSS. The collector stores the headline, date, and link only.",
+      "termsCheckedAt": "2026-11-26"
+    },
+    {
+      "id": "un-news",
+      "outlet": "UN News",
+      "feedUrl": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+      "language": "en",
+      "coverage": ["world"],
+      "topics": ["politics", "education", "social-rights"],
+      "termsNote": "United Nations public RSS. The collector stores the headline, date, and link only.",
+      "termsCheckedAt": "2026-11-26"
+    }
+  ]
+}

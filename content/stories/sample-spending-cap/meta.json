@@ -1,0 +1,77 @@
+{
+  "id": "sample-spending-cap",
+  "status": "sample",
+  "sections": ["brazil"],
+  "countries": ["BR"],
+  "topics": ["politics", "education"],
+  "subtopics": [],
+  "stage": "under-discussion",
+  "publishedAt": "2026-11-20T15:00:00Z",
+  "updatedAt": "2026-11-20T15:00:00Z",
+  "eventAt": null,
+  "dateBasis": "source-publication",
+  "featured": null,
+  "sources": [
+    {
+      "id": "sample-report",
+      "outlet": "Sample outlet",
+      "url": "https://example.com/samples/spending-cap",
+      "language": "pt-br",
+      "kind": "report",
+      "publishedAt": "2026-11-20T15:00:00Z"
+    }
+  ],
+  "visuals": [
+    {
+      "id": "spending-discussion",
+      "type": "discussion",
+      "sourceId": "sample-report",
+      "after": "where-things-stand",
+      "discussed": ["cap", "areas"],
+      "undefinedItems": ["which", "size", "draft"],
+      "locales": {
+        "pt-br": {
+          "title": "O que esta amostra separa",
+          "caption": "À esquerda está o que a equipe fictícia estaria discutindo. À direita está o que a amostra deixa sem resposta.",
+          "alt": "Dois grupos de texto: o que está em discussão e o que falta definir. Não há números.",
+          "leftHeading": "O que está em discussão",
+          "rightHeading": "O que falta definir",
+          "labels": {
+            "cap": "Uma regra para limitar o quanto algumas despesas podem crescer acima da inflação.",
+            "areas": "Saúde e educação são as áreas citadas na conversa fictícia.",
+            "which": "Quais despesas entrariam na regra.",
+            "size": "Qual seria o limite de crescimento.",
+            "draft": "Se a ideia chega a virar um texto formal."
+          }
+        },
+        "en": {
+          "title": "What this sample separates",
+          "caption": "The left list is what the fictional team would be discussing. The right list is what the sample leaves unanswered.",
+          "alt": "Two text groups: what is being discussed and what is still undefined. There are no figures.",
+          "leftHeading": "What is being discussed",
+          "rightHeading": "What is still undefined",
+          "labels": {
+            "cap": "A rule to limit how far some expenses can grow above inflation.",
+            "areas": "Health and education are the areas named in the fictional conversation.",
+            "which": "Which expenses the rule would cover.",
+            "size": "What the growth limit would be.",
+            "draft": "Whether the idea becomes a formal text."
+          }
+        }
+      }
+    }
+  ],
+  "corrections": [],
+  "locales": {
+    "pt-br": {
+      "title": "Equipe econômica estuda limitar quanto algumas despesas podem crescer acima da inflação",
+      "description": "Esta matéria é uma amostra de layout. Ela descreve uma proposta fictícia para limitar o crescimento de alguns gastos públicos.",
+      "reviewedAt": "2026-11-20T15:00:00Z"
+    },
+    "en": {
+      "title": "Economic team studies a cap on how far some spending can grow above inflation",
+      "description": "This story is a layout sample. It describes a fictional proposal to limit how fast some public spending can rise.",
+      "reviewedAt": "2026-11-20T15:00:00Z"
+    }
+  }
+}

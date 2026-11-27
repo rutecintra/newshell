@@ -1,0 +1,7 @@
+node_modules
+.next
+out
+public/indexes
+.DS_Store
+*.log
+.vercel

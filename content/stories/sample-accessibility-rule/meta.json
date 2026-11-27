@@ -1,0 +1,80 @@
+{
+  "id": "sample-accessibility-rule",
+  "status": "sample",
+  "sections": ["brazil"],
+  "countries": ["BR"],
+  "topics": ["social-rights"],
+  "subtopics": ["disability"],
+  "stage": "approved",
+  "publishedAt": "2026-11-12T18:00:00Z",
+  "updatedAt": "2026-11-12T18:00:00Z",
+  "eventAt": "2026-11-12T18:00:00Z",
+  "dateBasis": "source-publication",
+  "featured": null,
+  "sources": [
+    {
+      "id": "sample-report",
+      "outlet": "Sample outlet",
+      "url": "https://example.com/samples/accessibility-rule",
+      "language": "pt-br",
+      "kind": "report",
+      "publishedAt": "2026-11-12T18:00:00Z"
+    },
+    {
+      "id": "sample-record",
+      "outlet": "Sample record",
+      "url": "https://example.com/samples/accessibility-rule#record",
+      "language": "pt-br",
+      "kind": "document",
+      "publishedAt": "2026-11-12T18:00:00Z"
+    }
+  ],
+  "visuals": [
+    {
+      "id": "access-steps",
+      "type": "timeline",
+      "sourceId": "sample-record",
+      "after": "where-things-stand",
+      "events": [
+        { "id": "committee", "at": "2026-10-02T15:00:00Z", "state": "occurred" },
+        { "id": "floor", "at": "2026-11-12T18:00:00Z", "state": "occurred" },
+        { "id": "rules", "at": "2027-05-11T12:00:00Z", "state": "expected" }
+      ],
+      "locales": {
+        "pt-br": {
+          "title": "Etapas da decisão de amostra",
+          "caption": "Os dois primeiros passos já ocorreram na ficção. O terceiro é um prazo previsto, não um fato cumprido.",
+          "alt": "Linha do tempo: aprovação na comissão em 2 de outubro de 2026, aprovação no plenário em 12 de novembro de 2026, e regulamentação prevista até 11 de maio de 2027.",
+          "labels": {
+            "committee": "A comissão fictícia aprova o texto.",
+            "floor": "O plenário fictício aprova o texto.",
+            "rules": "O governo da amostra deveria publicar as regras de aplicação."
+          }
+        },
+        "en": {
+          "title": "Steps in the sample decision",
+          "caption": "The first two steps have already happened in the fiction. The third is an expected deadline, not a completed fact.",
+          "alt": "Timeline: committee approval on 2 October 2026, floor approval on 12 November 2026, and regulation expected by 11 May 2027.",
+          "labels": {
+            "committee": "The fictional committee approves the text.",
+            "floor": "The fictional floor approves the text.",
+            "rules": "The sample government would have to publish the application rules."
+          }
+        }
+      }
+    }
+  ],
+  "corrections": [],
+  "locales": {
+    "pt-br": {
+      "title": "Assembleia de amostra aprova regra de atendimento acessível",
+      "description": "Esta matéria de amostra acompanha uma decisão fictícia sobre acesso de pessoas com deficiência. A linha do tempo separa o que já ocorreu do que só está previsto.",
+      "reviewedAt": "2026-11-12T18:00:00Z"
+    },
+    "en": {
+      "title": "A sample assembly approves a rule on accessible service",
+      "description": "This sample story follows a fictional decision about access for disabled people. The timeline separates what has happened from what is only expected.",
+      "reviewedAt": "2026-11-12T18:00:00Z"
+    }
+  }
+}

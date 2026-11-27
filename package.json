@@ -1,0 +1,28 @@
+{
+  "name": "newshell",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "24.x"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "prebuild": "node scripts/build-indexes.js",
+    "build": "next build",
+    "validate:content": "node scripts/validate-content.js",
+    "test": "node --test lib/*.test.js",
+    "collect": "python3 scripts/collect.py",
+    "start": "python3 -m http.server 8080 --directory out"
+  },
+  "dependencies": {
+    "next": "16.4.6",
+    "react": "19.2.0",
+    "react-dom": "19.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "24.10.1",
+    "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.3",
+    "typescript": "5.9.3"
+  }
+}

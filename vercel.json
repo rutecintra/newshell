@@ -1,0 +1,7 @@
+{
+  "framework": null,
+  "installCommand": "npm ci",
+  "buildCommand": "npm run validate:content && npm run build",
+  "outputDirectory": "out",
+  "ignoreCommand": "node scripts/vercel-ignore.js"
+}
