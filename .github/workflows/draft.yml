@@ -56,4 +56,10 @@ jobs:
           git add content/stories
           git commit -m "feat: draft explanations"
           git push origin "$branch"
-          gh pr create --base main --head "$branch" --title "feat: draft explanations" --body "Draft explanations from the queue branch. Each story stays draft until a reviewer checks the original report and changes status to published."
+          if gh pr create --base main --head "$branch" --title "feat: draft explanations" --body "Draft explanations from the queue branch. Each story stays draft until a reviewer checks the original report and changes status to published."; then
+            exit 0
+          fi
+          echo "::error::GitHub Actions could not open the pull request. In Settings, Actions, General, Workflow permissions, choose read and write and allow GitHub Actions to create pull requests."
+          echo "The draft branch is $branch"
+          echo "https://github.com/${{ github.repository }}/compare/main...${branch}?expand=1"
+          exit 1
