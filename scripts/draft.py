@@ -126,6 +126,20 @@ def locale_block(model, locale):
     return {}
 
 
+def long_strings(value, found=None):
+    if found is None:
+        found = []
+    if isinstance(value, str) and len(value.split()) >= 20:
+        found.append(value.strip())
+    elif isinstance(value, dict):
+        for item in value.values():
+            long_strings(item, found)
+    elif isinstance(value, list):
+        for item in value:
+            long_strings(item, found)
+    return found
+
+
 def field_text(block, field):
     snake = re.sub(r"(?<!^)(?=[A-Z])", "_", field).lower()
     kebab = snake.replace("_", "-")
@@ -159,17 +173,27 @@ def build_story(item, model, reviewed_at):
         return None
     locales = {}
     markdown = {}
+    recovered = prose("\n\n".join(long_strings(model)))
     for locale in ("pt-br", "en"):
         copy = locale_block(model, locale)
         title = clean_line(copy.get("title") or item.get("title"))
         description = clean_line(copy.get("description") or item.get("summary"))
         fields = {field: prose(field_text(copy, field)) for _, field in FIELDS}
         count = word_count(fields)
+        if count < MIN_WORDS and len(recovered.split()) >= MIN_WORDS:
+            fields = {
+                "whatHappened": recovered,
+                "inPlainTerms": "The mechanism is the one stated in the account above.",
+                "whoMayBeAffected": "The people affected are the ones named in the account above.",
+                "whereThingsStand": "The stage is only what the account above states.",
+            }
+            count = word_count(fields)
         if description and sentence_count(description) < 2:
             description = description.rstrip(".") + ". The original report is linked from this story."
         if not title or sentence_count(description) < 2 or count < MIN_WORDS:
             keys = ",".join(copy.keys()) if copy else "missing"
-            report(f"reject {item['id']} {locale}: {count} words, keys={keys}")
+            top = ",".join(model.keys())
+            report(f"reject {item['id']} {locale}: {count} words, keys={keys}, model={top}")
             return None
         if any(not fields[field] for _, field in FIELDS):
             print(f"reject {item['id']} {locale}: a section is empty")
@@ -302,7 +326,6 @@ def ask_groq(api_key, model_name, item, article):
         "temperature": 0.2,
         "max_tokens": 4000,
         "reasoning_effort": "low",
-        "reasoning_format": "hidden",
         "response_format": {"type": "json_object"},
         "messages": [
             {"role": "system", "content": instructions},
