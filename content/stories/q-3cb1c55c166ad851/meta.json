@@ -1,0 +1,39 @@
+{
+  "id": "q-3cb1c55c166ad851",
+  "status": "published",
+  "sections": [
+    "brazil"
+  ],
+  "countries": [
+    "BR"
+  ],
+  "topics": [
+    "politics"
+  ],
+  "subtopics": [],
+  "stage": "under-discussion",
+  "publishedAt": "2026-11-26T21:03:00Z",
+  "updatedAt": "2026-11-27T06:20:15Z",
+  "eventAt": null,
+  "dateBasis": "source-publication",
+  "featured": null,
+  "sources": [
+    {
+      "id": "report",
+      "outlet": "Câmara dos Deputados",
+      "url": "https://www.camara.leg.br/noticias/1323481-ldo-de-2027-recebe-1-504-emendas-de-parlamentares",
+      "language": "pt-br",
+      "kind": "report",
+      "publishedAt": "2026-11-26T21:03:00Z"
+    }
+  ],
+  "visuals": [],
+  "corrections": [],
+  "locales": {
+    "pt-br": {
+      "title": "LDO de 2027 recebe 1.504 emendas de parlamentares",
+      "description": "Enquanto algumas buscam alterar a meta fiscal com o objetivo de evitar cortes, outras defendem rigidez maior das contas para fazer com que a dívida pública se estabilize. A reportagem original está ligada nesta matéria.",
+      "reviewedAt": "2026-11-27T06:20:15Z"
+    }
+  }
+}
