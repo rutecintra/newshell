@@ -43,6 +43,12 @@ class GroqError(RuntimeError):
         self.code = code
 
 
+def report(message):
+    text = " ".join(str(message).split())
+    print(text)
+    print(f"::error::{text[:1000]}")
+
+
 def story_id(queue_id):
     return "q-" + queue_id
 
@@ -240,7 +246,9 @@ def ask_groq(api_key, model_name, item, article):
     body = {
         "model": model_name,
         "temperature": 0.2,
-        "max_completion_tokens": 8000,
+        "max_tokens": 8000,
+        "reasoning_effort": "low",
+        "reasoning_format": "hidden",
         "response_format": {"type": "json_object"},
         "messages": [
             {"role": "system", "content": instructions},
@@ -260,6 +268,7 @@ def ask_groq(api_key, model_name, item, article):
             payload = json.loads(response.read().decode("utf-8"))
     except urllib.error.HTTPError as error:
         detail = error.read().decode("utf-8", errors="replace")[:500]
+        report(f"Groq returned {error.code}: {detail}")
         raise GroqError(error.code, detail) from error
     message = payload["choices"][0]["message"]
     content = message.get("content")
@@ -267,7 +276,9 @@ def ask_groq(api_key, model_name, item, article):
         content = "".join(part.get("text", "") for part in content if isinstance(part, dict))
     if not content:
         visible = {key: message.get(key) for key in message if key != "reasoning"}
-        raise GroqError(200, "empty content " + json.dumps(visible, ensure_ascii=False)[:500])
+        detail = "empty content " + json.dumps(visible, ensure_ascii=False)[:500]
+        report(detail)
+        raise GroqError(200, detail)
     return parse_model_json(content)
 
 
@@ -340,7 +351,8 @@ def load_queue():
     )
     if fetched.returncode != 0:
         detail = (fetched.stderr or fetched.stdout).strip()
-        raise SystemExit(f"Could not fetch the queue branch. {detail}")
+        report(f"Could not fetch the queue branch. {detail}")
+        raise SystemExit(1)
     shown = subprocess.run(
         ["git", "show", "origin/queue:queue/pending.json"],
         capture_output=True,
@@ -349,7 +361,8 @@ def load_queue():
     )
     if shown.returncode != 0:
         detail = (shown.stderr or "").strip()
-        raise SystemExit(f"The queue branch has no queue/pending.json. {detail}")
+        report(f"The queue branch has no queue/pending.json. {detail}")
+        raise SystemExit(1)
     return json.loads(shown.stdout)
 
 
@@ -367,7 +380,8 @@ def write_story(stories_root, built):
 def main():
     api_key = os.environ.get("GROQ_API_KEY", "").strip()
     if not api_key:
-        raise SystemExit("Set GROQ_API_KEY to draft explanations. The free Groq plan is enough to start.")
+        report("Set GROQ_API_KEY to draft explanations. The free Groq plan is enough to start.")
+        raise SystemExit(1)
     model_name = os.environ.get("GROQ_MODEL", DEFAULT_MODEL).strip() or DEFAULT_MODEL
     limit = int(os.environ.get("DRAFT_LIMIT", "2"))
     pending = load_queue()
@@ -387,7 +401,8 @@ def main():
         print(f"wrote {built['id']}")
     if not written:
         if eligible:
-            raise SystemExit("No draft was written. See the skip lines above.")
+            report("No draft was written. See the skip lines above.")
+            raise SystemExit(1)
         print("no drafts")
 
 
