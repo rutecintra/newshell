@@ -35,43 +35,6 @@ FIELDS = (
 )
 TAG = re.compile(r"<[^>]+>")
 ISO = re.compile(r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$")
-LOCALE_SCHEMA = {
-    "type": "object",
-    "additionalProperties": False,
-    "required": [
-        "title",
-        "description",
-        "whatHappened",
-        "inPlainTerms",
-        "whoMayBeAffected",
-        "whereThingsStand",
-    ],
-    "properties": {
-        "title": {"type": "string"},
-        "description": {"type": "string"},
-        "whatHappened": {"type": "string"},
-        "inPlainTerms": {"type": "string"},
-        "whoMayBeAffected": {"type": "string"},
-        "whereThingsStand": {"type": "string"},
-    },
-}
-RESPONSE_SCHEMA = {
-    "type": "object",
-    "additionalProperties": False,
-    "required": ["topics", "subtopics", "countries", "stage", "locales"],
-    "properties": {
-        "topics": {"type": "array", "items": {"type": "string", "enum": list(TOPICS)}},
-        "subtopics": {"type": "array", "items": {"type": "string", "enum": list(SUBTOPICS)}},
-        "countries": {"type": "array", "items": {"type": "string"}},
-        "stage": {"type": "string", "enum": list(STAGES)},
-        "locales": {
-            "type": "object",
-            "additionalProperties": False,
-            "required": ["pt-br", "en"],
-            "properties": {"pt-br": LOCALE_SCHEMA, "en": LOCALE_SCHEMA},
-        },
-    },
-}
 
 
 class GroqError(RuntimeError):
@@ -278,14 +241,7 @@ def ask_groq(api_key, model_name, item, article):
         "model": model_name,
         "temperature": 0.2,
         "max_completion_tokens": 8000,
-        "response_format": {
-            "type": "json_schema",
-            "json_schema": {
-                "name": "story_draft",
-                "strict": True,
-                "schema": RESPONSE_SCHEMA,
-            },
-        },
+        "response_format": {"type": "json_object"},
         "messages": [
             {"role": "system", "content": instructions},
             {"role": "user", "content": json.dumps(prompt, ensure_ascii=False)},

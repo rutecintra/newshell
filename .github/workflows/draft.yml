@@ -31,7 +31,16 @@ jobs:
           GROQ_MODEL: openai/gpt-oss-20b
           DRAFT_LIMIT: "2"
         run: |
-          python3 scripts/draft.py
+          set +e
+          python3 scripts/draft.py > draft.log 2>&1
+          code=$?
+          cat draft.log
+          {
+            echo '```'
+            tail -n 60 draft.log
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+          exit "$code"
       - name: Open a pull request
         env:
           GH_TOKEN: ${{ github.token }}
