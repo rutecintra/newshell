@@ -1,5 +1,355 @@
 [
   {
+    "id": "4c0dfca28ef791dc",
+    "sourceId": "camara-noticias",
+    "outlet": "Câmara dos Deputados",
+    "title": "Vencedores do concurso Eu e a Lei são premiados na Câmara",
+    "summary": "Concurso tem o objetivo de educar as crianças para o debate político e a democracia",
+    "url": "https://www.camara.leg.br/noticias/1323889-vencedores-do-concurso-eu-e-a-lei-sao-premiados-na-camara",
+    "language": "pt-br",
+    "coverage": [
+      "brazil"
+    ],
+    "publishedAt": "2026-11-27T21:43:00Z",
+    "collectedAt": "2026-11-27T21:58:41Z"
+  },
+  {
+    "id": "010a5233e2d41f90",
+    "sourceId": "agencia-brasil",
+    "outlet": "Agência Brasil",
+    "title": "Ato marca um ano do duplo feminicídio de servidoras no Cefet-RJ",
+    "summary": "Familiares, servidores e entidades sindicais realizaram um ato nesta sexta-feira (27) em memória da pedagoga Allane de Souza Pedrotti Matos e da psicóloga Layse Costa Pinheiro. Há um ano, as duas foram assassinadas a tiros por um colega de trabalho dentro do Centro Federal de Ed…",
+    "url": "https://agenciabrasil.ebc.com.br/direitos-humanos/noticia/2026-11/ato-marca-um-ano-do-duplo-feminicidio-de-servidoras-no-cefet-rj",
+    "language": "pt-br",
+    "coverage": [
+      "brazil"
+    ],
+    "publishedAt": "2026-11-27T21:20:00Z",
+    "collectedAt": "2026-11-27T21:58:40Z"
+  },
+  {
+    "id": "e12df41e78a19762",
+    "sourceId": "agencia-brasil",
+    "outlet": "Agência Brasil",
+    "title": "Vendas do Tesouro Direto registram melhor outubro da história",
+    "summary": "Impulsionadas pelo novo título Tesouro Reserva , as vendas de títulos públicos a pessoas físicas pela internet registraram o maior volume da história para meses de outubro , divulgou nesta sexta-feira (27) o Tesouro Nacional. No mês passado, o Tesouro Direto vendeu R$ 10,57 bilh…",
+    "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/vendas-do-tesouro-direto-registram-melhor-outubro-da-historia",
+    "language": "pt-br",
+    "coverage": [
+      "brazil"
+    ],
+    "publishedAt": "2026-11-27T21:01:00Z",
+    "collectedAt": "2026-11-27T21:58:40Z"
+  },
+  {
+    "id": "9fa3b4e1fd675c83",
+    "sourceId": "agencia-brasil",
+    "outlet": "Agência Brasil",
+    "title": "Brasil quer aproximar Mercosul de mercados do Caribe e América Central",
+    "summary": "O governo brasileiro deve aproveitar a cúpula do Mercosul, em Montevideo, no Uruguai, para aproximar o bloco comercial dos mercados do Caribe e da América Central. A 69ª Cúpula do Mercosul, prevista para os dias 3 e 4 de dezembro, marca a transferência da presidência do bloco do…",
+    "url": "https://agenciabrasil.ebc.com.br/internacional/noticia/2026-11/brasil-quer-aproximar-mercosul-de-mercados-do-caribe-e-america-central",
+    "language": "pt-br",
+    "coverage": [
+      "brazil"
+    ],
+    "publishedAt": "2026-11-27T20:57:00Z",
+    "collectedAt": "2026-11-27T21:58:40Z"
+  },
+  {
+    "id": "dad65c9d4c2a5e83",
+    "sourceId": "agencia-brasil",
+    "outlet": "Agência Brasil",
+    "title": "STF: Dino suspende emendas parlamentares de Flávio Bolsonaro",
+    "summary": "O ministro do Supremo Tribunal Federal (STF) Flávio Dino suspendeu a execução de emendas parlamentares apresentadas pelo senador Flávio Bolsonaro (PL-RJ) ao Projeto de Lei Orçamentária Anual (Ploa) de 2027. São 14 emendas, totalizando R$ 79,3 milhões. “A fim de resguardar a higi…",
+    "url": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-11/stf-dino-suspende-emendas-parlamentares-de-flavio-bolsonaro",
+    "language": "pt-br",
+    "coverage": [
+      "brazil"
+    ],
+    "publishedAt": "2026-11-27T20:41:00Z",
+    "collectedAt": "2026-11-27T21:58:40Z"
+  },
+  {
+    "id": "42a7a39bcd0a3d51",
+    "sourceId": "agencia-brasil",
+    "outlet": "Agência Brasil",
+    "title": "Mostra no Recife destaca diversidade de filmes de animação africanos",
+    "summary": "No mês da Consciência Negra, Recife recebe neste fim de semana uma mostra especial de curta-metragens de animação de diretores africanos. São dez obras de diferentes países. Entre elas, o filme A Morte de Gandji , do nigeriano Moustapha Alassane, de 1965. A obra tem quatro minut…",
+    "url": "https://agenciabrasil.ebc.com.br/cultura/noticia/2026-11/mostra-no-recife-destaca-diversidade-de-filmes-de-animacao-africanos",
+    "language": "pt-br",
+    "coverage": [
+      "brazil"
+    ],
+    "publishedAt": "2026-11-27T20:35:00Z",
+    "collectedAt": "2026-11-27T21:58:40Z"
+  },
+  {
+    "id": "24fa594140b97036",
+    "sourceId": "agencia-brasil",
+    "outlet": "Agência Brasil",
+    "title": "Enem 2026: resultado de pedidos de reaplicação já está disponível",
+    "summary": "Os inscritos no Exame Nacional do Ensino Médio (Enem) de 2026 que solicitaram a reaplicação de um ou dos dois dias de provas já podem conferir se o pedido foi aceito ou não. O Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira (Inep) publicou o resultado nest…",
+    "url": "https://agenciabrasil.ebc.com.br/educacao/noticia/2026-11/enem-2026-resultado-de-pedidos-de-reaplicacao-ja-esta-disponivel",
+    "language": "pt-br",
+    "coverage": [
+      "brazil"
+    ],
+    "publishedAt": "2026-11-27T20:30:00Z",
+    "collectedAt": "2026-11-27T21:58:40Z"
+  },
+  {
+    "id": "f822ddf298b941b8",
+    "sourceId": "camara-noticias",
+    "outlet": "Câmara dos Deputados",
+    "title": "Projeto prevê proteção contra ofertas abusivas de crédito para idosos",
+    "summary": "O texto está em análise na Câmara dos Deputados",
+    "url": "https://www.camara.leg.br/noticias/1311429-projeto-preve-protecao-contra-ofertas-abusivas-de-credito-para-idosos",
+    "language": "pt-br",
+    "coverage": [
+      "brazil"
+    ],
+    "publishedAt": "2026-11-27T20:25:00Z",
+    "collectedAt": "2026-11-27T21:58:41Z"
+  },
+  {
+    "id": "0f29e12d12a83184",
+    "sourceId": "agencia-brasil",
+    "outlet": "Agência Brasil",
+    "title": "Lula quer espaço de lazer e atenção para idosos",
+    "summary": "O presidente Luiz Inácio Lula da Silva disse, nesta sexta-feira (27), ter um projeto de criação de espaços de convivência para idosos , onde possam praticar atividades físicas, se entreter com música ou outras formas de lazer, além de terem acesso a atendimento médico. O preside…",
+    "url": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-11/lula-quer-espaco-de-lazer-e-atencao-para-idosos",
+    "language": "pt-br",
+    "coverage": [
+      "brazil"
+    ],
+    "publishedAt": "2026-11-27T19:51:00Z",
+    "collectedAt": "2026-11-27T21:58:40Z"
+  },
+  {
+    "id": "089e969c0d97bdaf",
+    "sourceId": "camara-noticias",
+    "outlet": "Câmara dos Deputados",
+    "title": "Seminário debaterá atuação da Comissão da Amazônia em defesa dos povos originários e tradicionais",
+    "summary": "Evento vai apresentar balanço de atividades da comissão neste ano",
+    "url": "https://www.camara.leg.br/noticias/1323195-seminario-debatera-atuacao-da-comissao-da-amazonia-em-defesa-dos-povos-originarios-e-tradicionais",
+    "language": "pt-br",
+    "coverage": [
+      "brazil"
+    ],
+    "publishedAt": "2026-11-27T19:36:00Z",
+    "collectedAt": "2026-11-27T21:58:41Z"
+  },
+  {
+    "id": "419dad8c5068e38a",
+    "sourceId": "agencia-brasil",
+    "outlet": "Agência Brasil",
+    "title": "Governo avalia que novo tarifaço dos EUA busca proteger big techs",
+    "summary": "O governo brasileiro avalia que a proposta de nova tarifa dos Estados Unidos (EUA) de 10% sobre a importação de aviões prontos e açúcar pretende, entre outros objetivos, desencorajar o Brasil de regular as big techs, além de pressionar por um acordo sobre minerais críticos que a…",
+    "url": "https://agenciabrasil.ebc.com.br/internacional/noticia/2026-11/governo-avalia-que-novo-tarifaco-dos-eua-busca-proteger-big-techs",
+    "language": "pt-br",
+    "coverage": [
+      "brazil"
+    ],
+    "publishedAt": "2026-11-27T19:20:00Z",
+    "collectedAt": "2026-11-27T21:58:40Z"
+  },
+  {
+    "id": "9cd97cc7263ce5b4",
+    "sourceId": "agencia-brasil",
+    "outlet": "Agência Brasil",
+    "title": "Aumento de casos de covid-19 pode estar relacionado a nova variante",
+    "summary": "Os casos de Síndrome Respiratória Aguda Grave (SRAG) por covid-19 continuam aumentando no país, com índice baixo de incidência. Segundo informações do Boletim Infogripe, da Fundação Oswaldo Cruz (Fiocruz), o aumento de casos pode estar relacionado à circulação de uma nova varian…",
+    "url": "https://agenciabrasil.ebc.com.br/saude/noticia/2026-11/aumento-de-casos-de-covid-19-pode-estar-relacionado-nova-variante",
+    "language": "pt-br",
+    "coverage": [
+      "brazil"
+    ],
+    "publishedAt": "2026-11-27T19:12:00Z",
+    "collectedAt": "2026-11-27T21:58:40Z"
+  },
+  {
+    "id": "2ec92c3c21fabbbf",
+    "sourceId": "agencia-brasil",
+    "outlet": "Agência Brasil",
+    "title": "Em encontro com Lula, estudantes destacam programas de acesso a ensino",
+    "summary": "O estudante de direito da Universidade Federal Fluminense (UFF) João Paulo Pimenta Armando destacou nesta sexta-feira (27) a importância dos programas educacionais do governo federal para o acesso ao ensino superior . Durante encontro do presidente Luiz Inácio Lula da Silva com…",
+    "url": "https://agenciabrasil.ebc.com.br/educacao/noticia/2026-11/em-encontro-com-lula-estudantes-destacam-programas-de-acesso-ensino",
+    "language": "pt-br",
+    "coverage": [
+      "brazil"
+    ],
+    "publishedAt": "2026-11-27T18:55:00Z",
+    "collectedAt": "2026-11-27T21:58:40Z"
+  },
+  {
+    "id": "14221a345f3c57a8",
+    "sourceId": "camara-noticias",
+    "outlet": "Câmara dos Deputados",
+    "title": "Comissão debate mortandade de peixes em rios no sul do Pará",
+    "summary": "Audiência pública nesta terça-feira (1º) discutirá causas da contaminação e impactos sobre comunidades da região",
+    "url": "https://www.camara.leg.br/noticias/1323205-comissao-debate-mortandade-de-peixes-em-rios-no-sul-do-para",
+    "language": "pt-br",
+    "coverage": [
+      "brazil"
+    ],
+    "publishedAt": "2026-11-27T18:53:00Z",
+    "collectedAt": "2026-11-27T21:58:41Z"
+  },
+  {
+    "id": "2e46c1d70dcfc647",
+    "sourceId": "camara-noticias",
+    "outlet": "Câmara dos Deputados",
+    "title": "Comissão aprova gratuidade de 20 minutos em áreas de embarque de aeroportos",
+    "summary": "Proposta segue em análise na Câmara",
+    "url": "https://www.camara.leg.br/noticias/1323758-comissao-aprova-gratuidade-de-20-minutos-em-areas-de-embarque-de-aeroportos",
+    "language": "pt-br",
+    "coverage": [
+      "brazil"
+    ],
+    "publishedAt": "2026-11-27T18:51:00Z",
+    "collectedAt": "2026-11-27T21:58:41Z"
+  },
+  {
+    "id": "8efb3ff997e04d8f",
+    "sourceId": "camara-noticias",
+    "outlet": "Câmara dos Deputados",
+    "title": "Comissão aprova criação de corredores exclusivos para motos e regras para circulação entre faixas",
+    "summary": "O projeto segue em análise na Câmara dos Deputados",
+    "url": "https://www.camara.leg.br/noticias/1323756-comissao-aprova-criacao-de-corredores-exclusivos-para-motos-e-regras-para-circulacao-entre-faixas",
+    "language": "pt-br",
+    "coverage": [
+      "brazil"
+    ],
+    "publishedAt": "2026-11-27T18:47:00Z",
+    "collectedAt": "2026-11-27T21:58:41Z"
+  },
+  {
+    "id": "3bebdfa8bd1d1b58",
+    "sourceId": "camara-noticias",
+    "outlet": "Câmara dos Deputados",
+    "title": "Comissão aprova direito de associações rurais contestarem dispensa de compra para merenda",
+    "summary": "Proposta segue em análise na Câmara dos Deputados",
+    "url": "https://www.camara.leg.br/noticias/1323754-comissao-aprova-direito-de-associacoes-rurais-contestarem-dispensa-de-compra-para-merenda",
+    "language": "pt-br",
+    "coverage": [
+      "brazil"
+    ],
+    "publishedAt": "2026-11-27T18:44:00Z",
+    "collectedAt": "2026-11-27T21:58:41Z"
+  },
+  {
+    "id": "aa8b59a615968b17",
+    "sourceId": "camara-noticias",
+    "outlet": "Câmara dos Deputados",
+    "title": "Comissão aprova gratuidade de até 30 minutos para veículos em área de embarque e desembarque dos aeroportos",
+    "summary": "Proposta segue em análise na Câmara dos Deputados",
+    "url": "https://www.camara.leg.br/noticias/1323760-comissao-aprova-gratuidade-de-ate-30-minutos-para-veiculos-em-area-de-embarque-e-desembarque-dos-aeroportos",
+    "language": "pt-br",
+    "coverage": [
+      "brazil"
+    ],
+    "publishedAt": "2026-11-27T18:40:00Z",
+    "collectedAt": "2026-11-27T21:58:41Z"
+  },
+  {
+    "id": "5b7680d8acea416c",
+    "sourceId": "camara-noticias",
+    "outlet": "Câmara dos Deputados",
+    "title": "Comissão debate riscos de aposentados e pensionistas em face da portabilidade digital",
+    "summary": "",
+    "url": "https://www.camara.leg.br/noticias/1323174-comissao-debate-riscos-de-aposentados-e-pensionistas-em-face-da-portabilidade-digital",
+    "language": "pt-br",
+    "coverage": [
+      "brazil"
+    ],
+    "publishedAt": "2026-11-27T18:39:00Z",
+    "collectedAt": "2026-11-27T21:58:41Z"
+  },
+  {
+    "id": "c6477c9742b24395",
+    "sourceId": "camara-noticias",
+    "outlet": "Câmara dos Deputados",
+    "title": "Comissão especial pode votar parecer sobre maioridade penal na terça-feira",
+    "summary": "",
+    "url": "https://www.camara.leg.br/noticias/1323243-comissao-especial-pode-votar-parecer-sobre-maioridade-penal-na-terca-feira",
+    "language": "pt-br",
+    "coverage": [
+      "brazil"
+    ],
+    "publishedAt": "2026-11-27T18:38:00Z",
+    "collectedAt": "2026-11-27T21:58:41Z"
+  },
+  {
+    "id": "232cb1cd93bbcdd1",
+    "sourceId": "camara-noticias",
+    "outlet": "Câmara dos Deputados",
+    "title": "Comissão debate financiamento do Programa Nacional de Infraestrutura Escolar",
+    "summary": "",
+    "url": "https://www.camara.leg.br/noticias/1323188-comissao-debate-financiamento-do-programa-nacional-de-infraestrutura-escolar",
+    "language": "pt-br",
+    "coverage": [
+      "brazil"
+    ],
+    "publishedAt": "2026-11-27T15:53:00Z",
+    "collectedAt": "2026-11-27T21:58:41Z"
+  },
+  {
+    "id": "6ce33f7d44bbe60f",
+    "sourceId": "camara-noticias",
+    "outlet": "Câmara dos Deputados",
+    "title": "Comissão debate perseguição a ativistas pró-Palestina; participe",
+    "summary": "O evento será interativo; envie suas perguntas",
+    "url": "https://www.camara.leg.br/noticias/1323179-comissao-debate-perseguicao-a-ativistas-pro-palestina-participe",
+    "language": "pt-br",
+    "coverage": [
+      "brazil"
+    ],
+    "publishedAt": "2026-11-27T15:50:00Z",
+    "collectedAt": "2026-11-27T21:58:41Z"
+  },
+  {
+    "id": "859f30c2b0c94828",
+    "sourceId": "camara-noticias",
+    "outlet": "Câmara dos Deputados",
+    "title": "Comissão debate aumento da violência sexual contra crianças e adolescentes",
+    "summary": "",
+    "url": "https://www.camara.leg.br/noticias/1323193-comissao-debate-aumento-da-violencia-sexual-contra-criancas-e-adolescentes",
+    "language": "pt-br",
+    "coverage": [
+      "brazil"
+    ],
+    "publishedAt": "2026-11-27T14:43:00Z",
+    "collectedAt": "2026-11-27T21:58:41Z"
+  },
+  {
+    "id": "7f748ba685966878",
+    "sourceId": "camara-noticias",
+    "outlet": "Câmara dos Deputados",
+    "title": "Comissão aprova diretriz para estimular telefonia móvel na área rural",
+    "summary": "O projeto continua em análise na Câmara dos Deputados",
+    "url": "https://www.camara.leg.br/noticias/1323328-comissao-aprova-diretriz-para-estimular-telefonia-movel-na-area-rural",
+    "language": "pt-br",
+    "coverage": [
+      "brazil"
+    ],
+    "publishedAt": "2026-11-27T14:19:00Z",
+    "collectedAt": "2026-11-27T21:58:41Z"
+  },
+  {
+    "id": "7bcb7ce938006370",
+    "sourceId": "camara-noticias",
+    "outlet": "Câmara dos Deputados",
+    "title": "Comissão aprova exigência de comando manual de acelerador em veículos adaptados de locadoras",
+    "summary": "Proposta segue em análise na Câmara dos Deputados",
+    "url": "https://www.camara.leg.br/noticias/1323513-comissao-aprova-exigencia-de-comando-manual-de-acelerador-em-veiculos-adaptados-de-locadoras",
+    "language": "pt-br",
+    "coverage": [
+      "brazil"
+    ],
+    "publishedAt": "2026-11-27T14:15:00Z",
+    "collectedAt": "2026-11-27T21:58:41Z"
+  },
+  {
     "id": "faf4564bb197c752",
     "sourceId": "agencia-brasil",
     "outlet": "Agência Brasil",
@@ -53,7 +403,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-27T12:00:00Z",
-    "collectedAt": "2026-11-27T13:09:58Z"
+    "collectedAt": "2026-11-27T21:58:41Z"
   },
   {
     "id": "8b26d6b7cd6d4bd7",
@@ -67,7 +417,21 @@
       "world"
     ],
     "publishedAt": "2026-11-27T12:00:00Z",
-    "collectedAt": "2026-11-27T13:09:58Z"
+    "collectedAt": "2026-11-27T21:58:41Z"
+  },
+  {
+    "id": "adb3a991a870feab",
+    "sourceId": "un-news",
+    "outlet": "UN News",
+    "title": "16 Days of Activism: UNHCR warns over deep funding cuts to vital protection work",
+    "summary": "Serious funding cuts are severely weakening protection for refugee and stateless women and girls and others at risk of gender-based violence (GBV), like Mariam, who survived a decade of captivity and rape at the hands of Boko Haram militia.",
+    "url": "https://news.un.org/feed/view/en/story/2026/11/1168888",
+    "language": "en",
+    "coverage": [
+      "world"
+    ],
+    "publishedAt": "2026-11-27T12:00:00Z",
+    "collectedAt": "2026-11-27T21:58:41Z"
   },
   {
     "id": "c9585026bfdc37e2",
@@ -138,6 +502,20 @@
     ],
     "publishedAt": "2026-11-27T11:00:00Z",
     "collectedAt": "2026-11-27T13:09:56Z"
+  },
+  {
+    "id": "32fcf78efcce88a2",
+    "sourceId": "camara-noticias",
+    "outlet": "Câmara dos Deputados",
+    "title": "Motta elogia escolha de Luiz Carlos Trabuco para o Ministério da Fazenda",
+    "summary": "Presidente da Câmara desejou êxito a Trabuco e afirmou estar à disposição para construir uma agenda econômica",
+    "url": "https://www.camara.leg.br/noticias/1323682-motta-elogia-escolha-de-luiz-carlos-trabuco-para-o-ministerio-da-fazenda",
+    "language": "pt-br",
+    "coverage": [
+      "brazil"
+    ],
+    "publishedAt": "2026-11-27T11:00:00Z",
+    "collectedAt": "2026-11-27T21:58:41Z"
   },
   {
     "id": "663e21351d0c46a5",
@@ -277,7 +655,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-26T22:37:00Z",
-    "collectedAt": "2026-11-27T13:09:58Z"
+    "collectedAt": "2026-11-27T21:58:41Z"
   },
   {
     "id": "49e51f63a7ab159e",
@@ -305,7 +683,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-26T22:14:00Z",
-    "collectedAt": "2026-11-27T13:09:58Z"
+    "collectedAt": "2026-11-27T21:58:41Z"
   },
   {
     "id": "df23af778bcee8c8",
@@ -333,7 +711,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-26T22:05:00Z",
-    "collectedAt": "2026-11-27T13:09:58Z"
+    "collectedAt": "2026-11-27T21:58:41Z"
   },
   {
     "id": "5baea50728e685d6",
@@ -557,7 +935,7 @@
       "world"
     ],
     "publishedAt": "2026-11-26T12:00:00Z",
-    "collectedAt": "2026-11-27T13:09:58Z"
+    "collectedAt": "2026-11-27T21:58:41Z"
   },
   {
     "id": "2662f04af74a1ed5",
@@ -571,7 +949,7 @@
       "world"
     ],
     "publishedAt": "2026-11-26T12:00:00Z",
-    "collectedAt": "2026-11-27T13:09:58Z"
+    "collectedAt": "2026-11-27T21:58:41Z"
   },
   {
     "id": "5ae09920b1227639",
@@ -585,7 +963,7 @@
       "world"
     ],
     "publishedAt": "2026-11-26T12:00:00Z",
-    "collectedAt": "2026-11-27T13:09:58Z"
+    "collectedAt": "2026-11-27T21:58:41Z"
   },
   {
     "id": "290c06ac4595e73f",
@@ -641,7 +1019,7 @@
       "world"
     ],
     "publishedAt": "2026-11-25T12:00:00Z",
-    "collectedAt": "2026-11-27T13:09:58Z"
+    "collectedAt": "2026-11-27T21:58:41Z"
   },
   {
     "id": "c964e4b3db3ecb1a",
@@ -655,7 +1033,7 @@
       "world"
     ],
     "publishedAt": "2026-11-25T12:00:00Z",
-    "collectedAt": "2026-11-27T13:09:58Z"
+    "collectedAt": "2026-11-27T21:58:41Z"
   },
   {
     "id": "1082f43610c695b8",
@@ -669,7 +1047,7 @@
       "world"
     ],
     "publishedAt": "2026-11-25T12:00:00Z",
-    "collectedAt": "2026-11-27T13:09:58Z"
+    "collectedAt": "2026-11-27T21:58:41Z"
   },
   {
     "id": "8e3c2ec7f7ddac1a",
@@ -683,7 +1061,7 @@
       "world"
     ],
     "publishedAt": "2026-11-25T12:00:00Z",
-    "collectedAt": "2026-11-27T13:09:58Z"
+    "collectedAt": "2026-11-27T21:58:41Z"
   },
   {
     "id": "f0e5e9ff176e0945",
@@ -697,7 +1075,7 @@
       "world"
     ],
     "publishedAt": "2026-11-25T12:00:00Z",
-    "collectedAt": "2026-11-27T13:09:58Z"
+    "collectedAt": "2026-11-27T21:58:41Z"
   },
   {
     "id": "c47d594f2fe1e10e",
@@ -711,7 +1089,7 @@
       "world"
     ],
     "publishedAt": "2026-11-25T12:00:00Z",
-    "collectedAt": "2026-11-27T13:09:58Z"
+    "collectedAt": "2026-11-27T21:58:41Z"
   },
   {
     "id": "3db522a7a8e93809",
@@ -725,7 +1103,7 @@
       "world"
     ],
     "publishedAt": "2026-11-24T12:00:00Z",
-    "collectedAt": "2026-11-27T13:09:58Z"
+    "collectedAt": "2026-11-27T21:58:41Z"
   },
   {
     "id": "58b673023dcf1630",
@@ -739,7 +1117,7 @@
       "world"
     ],
     "publishedAt": "2026-11-24T12:00:00Z",
-    "collectedAt": "2026-11-27T13:09:58Z"
+    "collectedAt": "2026-11-27T21:58:41Z"
   },
   {
     "id": "14db9f0896734b67",
@@ -753,7 +1131,7 @@
       "world"
     ],
     "publishedAt": "2026-11-24T12:00:00Z",
-    "collectedAt": "2026-11-27T13:09:58Z"
+    "collectedAt": "2026-11-27T21:58:41Z"
   },
   {
     "id": "7d8cc547f7c9a021",
@@ -767,7 +1145,7 @@
       "world"
     ],
     "publishedAt": "2026-11-24T12:00:00Z",
-    "collectedAt": "2026-11-27T13:09:58Z"
+    "collectedAt": "2026-11-27T21:58:41Z"
   },
   {
     "id": "a44f2907ccd9b397",
@@ -781,7 +1159,7 @@
       "world"
     ],
     "publishedAt": "2026-11-24T12:00:00Z",
-    "collectedAt": "2026-11-27T13:09:58Z"
+    "collectedAt": "2026-11-27T21:58:41Z"
   },
   {
     "id": "67a38418993d24fc",
@@ -795,7 +1173,7 @@
       "world"
     ],
     "publishedAt": "2026-11-24T12:00:00Z",
-    "collectedAt": "2026-11-27T13:09:58Z"
+    "collectedAt": "2026-11-27T21:58:41Z"
   },
   {
     "id": "f12aebcb27fa9ccc",
@@ -809,7 +1187,7 @@
       "world"
     ],
     "publishedAt": "2026-11-24T12:00:00Z",
-    "collectedAt": "2026-11-27T13:09:58Z"
+    "collectedAt": "2026-11-27T21:58:41Z"
   },
   {
     "id": "23ce2785727fbeec",
@@ -823,7 +1201,7 @@
       "world"
     ],
     "publishedAt": "2026-11-23T12:00:00Z",
-    "collectedAt": "2026-11-27T13:09:58Z"
+    "collectedAt": "2026-11-27T21:58:41Z"
   },
   {
     "id": "16ee36335eaaf1cb",
@@ -837,7 +1215,7 @@
       "world"
     ],
     "publishedAt": "2026-11-23T12:00:00Z",
-    "collectedAt": "2026-11-27T13:09:58Z"
+    "collectedAt": "2026-11-27T21:58:41Z"
   },
   {
     "id": "095442ef4a2257f8",
@@ -851,7 +1229,7 @@
       "world"
     ],
     "publishedAt": "2026-11-23T12:00:00Z",
-    "collectedAt": "2026-11-27T13:09:58Z"
+    "collectedAt": "2026-11-27T21:58:41Z"
   },
   {
     "id": "a68db2f1d7afa781",
@@ -865,7 +1243,7 @@
       "world"
     ],
     "publishedAt": "2026-11-23T12:00:00Z",
-    "collectedAt": "2026-11-27T13:09:58Z"
+    "collectedAt": "2026-11-27T21:58:41Z"
   },
   {
     "id": "307e98b05da69a02",
@@ -879,7 +1257,7 @@
       "world"
     ],
     "publishedAt": "2026-11-23T12:00:00Z",
-    "collectedAt": "2026-11-27T13:09:58Z"
+    "collectedAt": "2026-11-27T21:58:41Z"
   },
   {
     "id": "180a5dc2f3a58b22",
@@ -893,7 +1271,7 @@
       "world"
     ],
     "publishedAt": "2026-11-22T12:00:00Z",
-    "collectedAt": "2026-11-27T13:09:58Z"
+    "collectedAt": "2026-11-27T21:58:41Z"
   },
   {
     "id": "2f16e29e794aeda1",
@@ -907,7 +1285,7 @@
       "world"
     ],
     "publishedAt": "2026-11-22T12:00:00Z",
-    "collectedAt": "2026-11-27T13:09:58Z"
+    "collectedAt": "2026-11-27T21:58:41Z"
   },
   {
     "id": "d8cb37b6ee449ecf",
@@ -921,7 +1299,7 @@
       "world"
     ],
     "publishedAt": "2026-11-22T12:00:00Z",
-    "collectedAt": "2026-11-27T13:09:58Z"
+    "collectedAt": "2026-11-27T21:58:41Z"
   },
   {
     "id": "1651c68df9d73951",
@@ -935,7 +1313,7 @@
       "world"
     ],
     "publishedAt": "2026-11-21T12:00:00Z",
-    "collectedAt": "2026-11-27T13:09:58Z"
+    "collectedAt": "2026-11-27T21:58:41Z"
   },
   {
     "id": "0dccb4dc48ad0533",
@@ -949,7 +1327,7 @@
       "world"
     ],
     "publishedAt": "2026-11-21T12:00:00Z",
-    "collectedAt": "2026-11-27T13:09:58Z"
+    "collectedAt": "2026-11-27T21:58:41Z"
   },
   {
     "id": "c8ebbd1cbde74c03",
@@ -963,7 +1341,7 @@
       "world"
     ],
     "publishedAt": "2026-11-20T12:00:00Z",
-    "collectedAt": "2026-11-27T13:09:58Z"
+    "collectedAt": "2026-11-27T21:58:41Z"
   },
   {
     "id": "1e3300495dbd72fb",
@@ -977,7 +1355,7 @@
       "world"
     ],
     "publishedAt": "2026-11-20T12:00:00Z",
-    "collectedAt": "2026-11-27T13:09:58Z"
+    "collectedAt": "2026-11-27T21:58:41Z"
   },
   {
     "id": "1e33a84d56832480",
