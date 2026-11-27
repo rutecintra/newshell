@@ -1,0 +1,42 @@
+{
+  "id": "q-3cf842ae07bda057",
+  "status": "published",
+  "sections": [
+    "brazil"
+  ],
+  "countries": [
+    "BR"
+  ],
+  "topics": [
+    "politics",
+    "social-rights"
+  ],
+  "subtopics": [
+    "women"
+  ],
+  "stage": "under-discussion",
+  "publishedAt": "2026-11-26T22:05:00Z",
+  "updatedAt": "2026-11-27T06:20:15Z",
+  "eventAt": null,
+  "dateBasis": "source-publication",
+  "featured": null,
+  "sources": [
+    {
+      "id": "report",
+      "outlet": "Câmara dos Deputados",
+      "url": "https://www.camara.leg.br/noticias/1323417-comissao-aprova-prazo-de-24-horas-para-medidas-protetivas-apos-tentativa-de-feminicidio",
+      "language": "pt-br",
+      "kind": "report",
+      "publishedAt": "2026-11-26T22:05:00Z"
+    }
+  ],
+  "visuals": [],
+  "corrections": [],
+  "locales": {
+    "pt-br": {
+      "title": "Comissão aprova prazo de 24 horas para medidas protetivas após tentativa de feminicídio",
+      "description": "Projeto de lei segue em análise na Câmara. A reportagem original está ligada nesta matéria.",
+      "reviewedAt": "2026-11-27T06:20:15Z"
+    }
+  }
+}
