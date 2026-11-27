@@ -1,0 +1,39 @@
+{
+  "id": "q-db1435cd6ef3b561",
+  "status": "published",
+  "sections": [
+    "brazil"
+  ],
+  "countries": [
+    "BR"
+  ],
+  "topics": [
+    "politics"
+  ],
+  "subtopics": [],
+  "stage": "introduced",
+  "publishedAt": "2026-11-26T15:00:00Z",
+  "updatedAt": "2026-11-27T06:20:15Z",
+  "eventAt": null,
+  "dateBasis": "source-publication",
+  "featured": null,
+  "sources": [
+    {
+      "id": "report",
+      "outlet": "Câmara dos Deputados",
+      "url": "https://www.camara.leg.br/noticias/1323264-deputados-aprovam-acordo-de-cooperacao-juridica-na-area-penal-entre-brasil-e-guiana",
+      "language": "pt-br",
+      "kind": "report",
+      "publishedAt": "2026-11-26T15:00:00Z"
+    }
+  ],
+  "visuals": [],
+  "corrections": [],
+  "locales": {
+    "pt-br": {
+      "title": "Deputados aprovam acordo de cooperação jurídica na área penal entre Brasil e Guiana",
+      "description": "Texto segue para análise do Senado. A reportagem original está ligada nesta matéria.",
+      "reviewedAt": "2026-11-27T06:20:15Z"
+    }
+  }
+}
