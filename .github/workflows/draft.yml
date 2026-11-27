@@ -31,7 +31,6 @@ jobs:
           GROQ_MODEL: openai/gpt-oss-20b
           DRAFT_LIMIT: "2"
         run: |
-          git fetch origin queue
           python3 scripts/draft.py
       - name: Open a pull request
         env:

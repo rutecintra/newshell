@@ -74,6 +74,24 @@ class DraftTest(unittest.TestCase):
         )
         self.assertEqual(written, [])
 
+    def test_a_later_article_fills_the_limit_when_the_first_is_short(self):
+        first = item()
+        second = dict(item(), id="def456", url="https://example.com/other")
+
+        def extract(url):
+            return "too short" if url == first["url"] else "word " * 500
+
+        written = draft_items(
+            [first, second],
+            set(),
+            set(),
+            extract=extract,
+            ask=lambda item, article: model(),
+            limit=1,
+            reviewed_at="2026-11-27T04:00:00Z",
+        )
+        self.assertEqual([story["id"] for story in written], ["q-def456"])
+
 
 if __name__ == "__main__":
     unittest.main()

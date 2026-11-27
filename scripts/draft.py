@@ -159,7 +159,10 @@ def build_story(item, model, reviewed_at):
 
 def draft_items(pending, known_urls, known_ids, extract, ask, limit, reviewed_at):
     written = []
-    for item in select_items(pending, known_urls, known_ids, limit):
+    candidates = select_items(pending, known_urls, known_ids, max(len(pending), 1))
+    for item in candidates:
+        if len(written) >= limit:
+            break
         article = extract(item["url"]) or ""
         if len(article) < MIN_ARTICLE_CHARS:
             print(f"skip {item['id']}: article text is too short")
@@ -306,6 +309,15 @@ def remote_draft_urls():
 
 
 def load_queue():
+    fetched = subprocess.run(
+        ["git", "fetch", "origin", "queue:refs/remotes/origin/queue"],
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    if fetched.returncode != 0:
+        detail = (fetched.stderr or fetched.stdout).strip()
+        raise SystemExit(f"Could not fetch the queue branch. {detail}")
     shown = subprocess.run(
         ["git", "show", "origin/queue:queue/pending.json"],
         capture_output=True,
@@ -313,7 +325,8 @@ def load_queue():
         check=False,
     )
     if shown.returncode != 0:
-        return []
+        detail = (shown.stderr or "").strip()
+        raise SystemExit(f"The queue branch has no queue/pending.json. {detail}")
     return json.loads(shown.stdout)
 
 
@@ -342,11 +355,16 @@ def main():
     def ask(item, article):
         return ask_groq(api_key, model_name, item, article)
 
+    print(f"queue has {len(pending)} headlines")
+    eligible = select_items(pending, urls, ids, max(len(pending), 1))
+    print(f"{len(eligible)} headlines are not drafted yet")
     written = draft_items(pending, urls, ids, extract_article, ask, limit, reviewed_at)
     for built in written:
         write_story(STORIES, built)
         print(f"wrote {built['id']}")
     if not written:
+        if eligible:
+            raise SystemExit("No draft was written. See the skip lines above.")
         print("no drafts")
 
 
