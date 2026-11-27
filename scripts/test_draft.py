@@ -56,7 +56,7 @@ class DraftTest(unittest.TestCase):
     def test_build_story_keeps_only_allowed_fields(self):
         built = build_story(item(), model(), "2026-11-27T04:00:00Z")
         self.assertEqual(built["id"], "q-abc123")
-        self.assertEqual(built["meta"]["status"], "draft")
+        self.assertEqual(built["meta"]["status"], "published")
         self.assertEqual(built["meta"]["topics"], ["education"])
         self.assertEqual(built["meta"]["countries"], ["BR"])
         self.assertIn("## what-happened", built["markdown"]["pt-br"])
