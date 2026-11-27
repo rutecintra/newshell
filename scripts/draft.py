@@ -35,6 +35,49 @@ FIELDS = (
 )
 TAG = re.compile(r"<[^>]+>")
 ISO = re.compile(r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$")
+LOCALE_SCHEMA = {
+    "type": "object",
+    "additionalProperties": False,
+    "required": [
+        "title",
+        "description",
+        "whatHappened",
+        "inPlainTerms",
+        "whoMayBeAffected",
+        "whereThingsStand",
+    ],
+    "properties": {
+        "title": {"type": "string"},
+        "description": {"type": "string"},
+        "whatHappened": {"type": "string"},
+        "inPlainTerms": {"type": "string"},
+        "whoMayBeAffected": {"type": "string"},
+        "whereThingsStand": {"type": "string"},
+    },
+}
+RESPONSE_SCHEMA = {
+    "type": "object",
+    "additionalProperties": False,
+    "required": ["topics", "subtopics", "countries", "stage", "locales"],
+    "properties": {
+        "topics": {"type": "array", "items": {"type": "string", "enum": list(TOPICS)}},
+        "subtopics": {"type": "array", "items": {"type": "string", "enum": list(SUBTOPICS)}},
+        "countries": {"type": "array", "items": {"type": "string"}},
+        "stage": {"type": "string", "enum": list(STAGES)},
+        "locales": {
+            "type": "object",
+            "additionalProperties": False,
+            "required": ["pt-br", "en"],
+            "properties": {"pt-br": LOCALE_SCHEMA, "en": LOCALE_SCHEMA},
+        },
+    },
+}
+
+
+class GroqError(RuntimeError):
+    def __init__(self, code, detail):
+        super().__init__(f"Groq returned {code}: {detail}")
+        self.code = code
 
 
 def story_id(queue_id):
@@ -114,10 +157,16 @@ def build_story(item, model, reviewed_at):
         copy = (model.get("locales") or {}).get(locale) or {}
         title = clean_line(copy.get("title"))
         description = clean_line(copy.get("description"))
-        fields = {field: prose(copy.get(field)) for _, field in FIELDS}
-        if not title or sentence_count(description) < 2 or word_count(fields) < MIN_WORDS:
+        fields = {}
+        for heading, field in FIELDS:
+            snake = re.sub(r"(?<!^)(?=[A-Z])", "_", field).lower()
+            fields[field] = prose(copy.get(field) or copy.get(snake))
+        count = word_count(fields)
+        if not title or sentence_count(description) < 2 or count < MIN_WORDS:
+            print(f"reject {item['id']} {locale}: {count} words, description={description[:120]!r}")
             return None
         if any(not fields[field] for _, field in FIELDS):
+            print(f"reject {item['id']} {locale}: a section is empty")
             return None
         locales[locale] = {
             "title": title,
@@ -157,18 +206,25 @@ def build_story(item, model, reviewed_at):
     return {"id": meta["id"], "meta": meta, "markdown": markdown}
 
 
-def draft_items(pending, known_urls, known_ids, extract, ask, limit, reviewed_at):
+def draft_items(pending, known_urls, known_ids, extract, ask, limit, reviewed_at, max_attempts=6):
     written = []
+    attempts = 0
     candidates = select_items(pending, known_urls, known_ids, max(len(pending), 1))
     for item in candidates:
-        if len(written) >= limit:
+        if len(written) >= limit or attempts >= max_attempts:
             break
         article = extract(item["url"]) or ""
         if len(article) < MIN_ARTICLE_CHARS:
-            print(f"skip {item['id']}: article text is too short")
+            print(f"skip {item['id']}: article text is too short ({len(article)} chars)")
             continue
+        attempts += 1
         try:
             model = ask(item, article)
+        except GroqError as error:
+            print(f"skip {item['id']}: {error}")
+            if error.code in (400, 401, 403, 404) or error.code == 200:
+                raise
+            continue
         except Exception as error:
             print(f"skip {item['id']}: {error}")
             continue
@@ -221,8 +277,15 @@ def ask_groq(api_key, model_name, item, article):
     body = {
         "model": model_name,
         "temperature": 0.2,
-        "max_tokens": 2500,
-        "response_format": {"type": "json_object"},
+        "max_completion_tokens": 8000,
+        "response_format": {
+            "type": "json_schema",
+            "json_schema": {
+                "name": "story_draft",
+                "strict": True,
+                "schema": RESPONSE_SCHEMA,
+            },
+        },
         "messages": [
             {"role": "system", "content": instructions},
             {"role": "user", "content": json.dumps(prompt, ensure_ascii=False)},
@@ -241,10 +304,14 @@ def ask_groq(api_key, model_name, item, article):
             payload = json.loads(response.read().decode("utf-8"))
     except urllib.error.HTTPError as error:
         detail = error.read().decode("utf-8", errors="replace")[:500]
-        raise RuntimeError(f"Groq returned {error.code}: {detail}") from error
-    content = payload["choices"][0]["message"]["content"]
+        raise GroqError(error.code, detail) from error
+    message = payload["choices"][0]["message"]
+    content = message.get("content")
     if isinstance(content, list):
         content = "".join(part.get("text", "") for part in content if isinstance(part, dict))
+    if not content:
+        visible = {key: message.get(key) for key in message if key != "reasoning"}
+        raise GroqError(200, "empty content " + json.dumps(visible, ensure_ascii=False)[:500])
     return parse_model_json(content)
 
 
