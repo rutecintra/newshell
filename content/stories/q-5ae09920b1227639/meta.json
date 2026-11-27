@@ -1,0 +1,42 @@
+{
+  "id": "q-5ae09920b1227639",
+  "status": "published",
+  "sections": [
+    "world"
+  ],
+  "countries": [
+    "INT"
+  ],
+  "topics": [
+    "politics",
+    "social-rights"
+  ],
+  "subtopics": [
+    "women"
+  ],
+  "stage": "under-discussion",
+  "publishedAt": "2026-11-26T12:00:00Z",
+  "updatedAt": "2026-11-27T06:20:15Z",
+  "eventAt": null,
+  "dateBasis": "source-publication",
+  "featured": null,
+  "sources": [
+    {
+      "id": "report",
+      "outlet": "UN News",
+      "url": "https://news.un.org/feed/view/en/story/2026/11/1168883",
+      "language": "en",
+      "kind": "report",
+      "publishedAt": "2026-11-26T12:00:00Z"
+    }
+  ],
+  "visuals": [],
+  "corrections": [],
+  "locales": {
+    "pt-br": {
+      "title": "DR Congo: Peacekepers step up civilian protection amid fighting in Ituri",
+      "description": "United Nations peacekeepers in the Democratic Republic of the Congo (DRC) have stepped up efforts to protect civilians in Ebola-hit Ituri province following renewed armed clashes in Djugu territory. A reportagem original está ligada nesta matéria.",
+      "reviewedAt": "2026-11-27T06:20:15Z"
+    }
+  }
+}
