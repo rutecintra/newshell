@@ -10,7 +10,7 @@
     "prebuild": "node scripts/build-indexes.js",
     "build": "next build",
     "validate:content": "node scripts/validate-content.js",
-    "test": "node --test lib/*.test.js",
+    "test": "node --test lib/*.test.js && python3 -m unittest discover -s scripts -p 'test_*.py'",
     "collect": "python3 scripts/collect.py",
     "start": "python3 -m http.server 8080 --directory out"
   },
