@@ -1,5 +1,75 @@
 [
   {
+    "id": "a5f4ff2929b5ad4e",
+    "sourceId": "agencia-brasil",
+    "outlet": "Agência Brasil",
+    "title": "PM do Rio ocupa comunidades de Jacarepaguá por tempo indeterminado",
+    "summary": "A Polícia Militar do Rio de Janeiro está ocupando, a partir desta sexta-feira (27), por tempo indeterminado, as comunidades dos Teixeiras e do Jordão, em Jacarepaguá, zona sudoeste do Rio. Na manhã de hoje, policiais encontraram uma cabeça humana em estado de decomposição dentro…",
+    "url": "https://agenciabrasil.ebc.com.br/justica/noticia/2026-11/pm-do-rio-ocupa-comunidades-de-jacarepagua-por-tempo-indeterminado",
+    "language": "pt-br",
+    "coverage": [
+      "brazil"
+    ],
+    "publishedAt": "2026-11-27T23:27:00Z",
+    "collectedAt": "2026-11-28T03:54:55Z"
+  },
+  {
+    "id": "01b7508bfffaeaa3",
+    "sourceId": "agencia-brasil",
+    "outlet": "Agência Brasil",
+    "title": "Dólar cai quase 4% e fecha em R$ 5,51, após anúncio de Trabuco",
+    "summary": "O dólar caiu quase 4% nesta sexta-feira (27) e fechou em R$ 5,51, após a confirmação de Luiz Carlos Trabuco no comando do Ministério da Fazenda no próximo governo de Luiz Inácio Lula da Silva. Na quinta sessão consecutiva de queda, a moeda americana acumulou recuo de pouco mais…",
+    "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/dolar-cai-quase-4-e-fecha-em-r-551-apos-anuncio-de-trabuco",
+    "language": "pt-br",
+    "coverage": [
+      "brazil"
+    ],
+    "publishedAt": "2026-11-27T22:47:00Z",
+    "collectedAt": "2026-11-28T03:54:55Z"
+  },
+  {
+    "id": "dec506acb34138e9",
+    "sourceId": "agencia-brasil",
+    "outlet": "Agência Brasil",
+    "title": "Distribuidoras de energia oferecem descontos para renegociar dívidas",
+    "summary": "As distribuidoras de energia elétrica iniciaram campanhas de renegociação de dívidas, com condições especiais para consumidores que buscam regularizar débitos com os recursos do décimo terceiro salário. A primeira parcela do benefício deve ser paga até a próxima segunda-feira (3…",
+    "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/distribuidoras-de-energia-oferecem-descontos-para-renegociar-dividas",
+    "language": "pt-br",
+    "coverage": [
+      "brazil"
+    ],
+    "publishedAt": "2026-11-27T22:40:00Z",
+    "collectedAt": "2026-11-28T03:54:55Z"
+  },
+  {
+    "id": "b77fd7a65b389f48",
+    "sourceId": "agencia-brasil",
+    "outlet": "Agência Brasil",
+    "title": "Com bandeira tarifária verde, energia não terá custo extra em dezembro",
+    "summary": "O mês de dezembro continuará sem cobrança de taxa extra nas contas de energia elétrica dos brasileiros. A Agência Nacional de Energia Elétrica (Aneel) manteve a bandeira tarifária verde pelo terceiro mês seguido . Segundo a Aneel, a manutenção da bandeira verde reflete as condiç…",
+    "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/com-bandeira-tarifaria-verde-energia-nao-tera-custo-extra-em-dezembro",
+    "language": "pt-br",
+    "coverage": [
+      "brazil"
+    ],
+    "publishedAt": "2026-11-27T22:29:00Z",
+    "collectedAt": "2026-11-28T03:54:55Z"
+  },
+  {
+    "id": "6cadf68b45afd07b",
+    "sourceId": "agencia-brasil",
+    "outlet": "Agência Brasil",
+    "title": "Inauguração da Árvore de Natal da Lagoa terá queima de fogos e drones",
+    "summary": "Uma operação especial foi montada para a inauguração da tradicional Árvore de Natal da Lagoa, na zona sul do Rio de Janeiro, que este ano está completando 30 anos. Para o lançamento neste sábado (28), a partir das 17h, no Complexo Lagoon, haverá um concerto da Orquestra Petrobra…",
+    "url": "https://agenciabrasil.ebc.com.br/cultura/noticia/2026-11/inauguracao-da-arvore-de-natal-da-lagoa-tera-queima-de-fogos-e-drones",
+    "language": "pt-br",
+    "coverage": [
+      "brazil"
+    ],
+    "publishedAt": "2026-11-27T21:50:00Z",
+    "collectedAt": "2026-11-28T03:54:55Z"
+  },
+  {
     "id": "4c0dfca28ef791dc",
     "sourceId": "camara-noticias",
     "outlet": "Câmara dos Deputados",
@@ -11,7 +81,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-27T21:43:00Z",
-    "collectedAt": "2026-11-27T21:58:41Z"
+    "collectedAt": "2026-11-28T03:54:56Z"
   },
   {
     "id": "010a5233e2d41f90",
@@ -25,7 +95,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-27T21:20:00Z",
-    "collectedAt": "2026-11-27T21:58:40Z"
+    "collectedAt": "2026-11-28T03:54:55Z"
   },
   {
     "id": "e12df41e78a19762",
@@ -39,7 +109,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-27T21:01:00Z",
-    "collectedAt": "2026-11-27T21:58:40Z"
+    "collectedAt": "2026-11-28T03:54:55Z"
   },
   {
     "id": "9fa3b4e1fd675c83",
@@ -53,7 +123,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-27T20:57:00Z",
-    "collectedAt": "2026-11-27T21:58:40Z"
+    "collectedAt": "2026-11-28T03:54:55Z"
   },
   {
     "id": "dad65c9d4c2a5e83",
@@ -67,7 +137,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-27T20:41:00Z",
-    "collectedAt": "2026-11-27T21:58:40Z"
+    "collectedAt": "2026-11-28T03:54:55Z"
   },
   {
     "id": "42a7a39bcd0a3d51",
@@ -81,7 +151,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-27T20:35:00Z",
-    "collectedAt": "2026-11-27T21:58:40Z"
+    "collectedAt": "2026-11-28T03:54:55Z"
   },
   {
     "id": "24fa594140b97036",
@@ -109,7 +179,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-27T20:25:00Z",
-    "collectedAt": "2026-11-27T21:58:41Z"
+    "collectedAt": "2026-11-28T03:54:56Z"
   },
   {
     "id": "0f29e12d12a83184",
@@ -137,7 +207,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-27T19:36:00Z",
-    "collectedAt": "2026-11-27T21:58:41Z"
+    "collectedAt": "2026-11-28T03:54:56Z"
   },
   {
     "id": "419dad8c5068e38a",
@@ -193,7 +263,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-27T18:53:00Z",
-    "collectedAt": "2026-11-27T21:58:41Z"
+    "collectedAt": "2026-11-28T03:54:56Z"
   },
   {
     "id": "2e46c1d70dcfc647",
@@ -207,7 +277,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-27T18:51:00Z",
-    "collectedAt": "2026-11-27T21:58:41Z"
+    "collectedAt": "2026-11-28T03:54:56Z"
   },
   {
     "id": "8efb3ff997e04d8f",
@@ -221,7 +291,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-27T18:47:00Z",
-    "collectedAt": "2026-11-27T21:58:41Z"
+    "collectedAt": "2026-11-28T03:54:56Z"
   },
   {
     "id": "3bebdfa8bd1d1b58",
@@ -235,7 +305,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-27T18:44:00Z",
-    "collectedAt": "2026-11-27T21:58:41Z"
+    "collectedAt": "2026-11-28T03:54:56Z"
   },
   {
     "id": "aa8b59a615968b17",
@@ -249,7 +319,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-27T18:40:00Z",
-    "collectedAt": "2026-11-27T21:58:41Z"
+    "collectedAt": "2026-11-28T03:54:56Z"
   },
   {
     "id": "5b7680d8acea416c",
@@ -263,7 +333,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-27T18:39:00Z",
-    "collectedAt": "2026-11-27T21:58:41Z"
+    "collectedAt": "2026-11-28T03:54:56Z"
   },
   {
     "id": "c6477c9742b24395",
@@ -277,7 +347,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-27T18:38:00Z",
-    "collectedAt": "2026-11-27T21:58:41Z"
+    "collectedAt": "2026-11-28T03:54:56Z"
   },
   {
     "id": "232cb1cd93bbcdd1",
@@ -291,7 +361,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-27T15:53:00Z",
-    "collectedAt": "2026-11-27T21:58:41Z"
+    "collectedAt": "2026-11-28T03:54:56Z"
   },
   {
     "id": "6ce33f7d44bbe60f",
@@ -305,7 +375,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-27T15:50:00Z",
-    "collectedAt": "2026-11-27T21:58:41Z"
+    "collectedAt": "2026-11-28T03:54:56Z"
   },
   {
     "id": "859f30c2b0c94828",
@@ -319,7 +389,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-27T14:43:00Z",
-    "collectedAt": "2026-11-27T21:58:41Z"
+    "collectedAt": "2026-11-28T03:54:56Z"
   },
   {
     "id": "7f748ba685966878",
@@ -333,7 +403,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-27T14:19:00Z",
-    "collectedAt": "2026-11-27T21:58:41Z"
+    "collectedAt": "2026-11-28T03:54:56Z"
   },
   {
     "id": "7bcb7ce938006370",
@@ -347,7 +417,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-27T14:15:00Z",
-    "collectedAt": "2026-11-27T21:58:41Z"
+    "collectedAt": "2026-11-28T03:54:56Z"
   },
   {
     "id": "faf4564bb197c752",
@@ -403,7 +473,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-27T12:00:00Z",
-    "collectedAt": "2026-11-27T21:58:41Z"
+    "collectedAt": "2026-11-28T03:54:56Z"
   },
   {
     "id": "8b26d6b7cd6d4bd7",
@@ -515,7 +585,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-27T11:00:00Z",
-    "collectedAt": "2026-11-27T21:58:41Z"
+    "collectedAt": "2026-11-28T03:54:56Z"
   },
   {
     "id": "663e21351d0c46a5",
@@ -655,7 +725,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-26T22:37:00Z",
-    "collectedAt": "2026-11-27T21:58:41Z"
+    "collectedAt": "2026-11-28T03:54:56Z"
   },
   {
     "id": "49e51f63a7ab159e",
@@ -683,7 +753,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-26T22:14:00Z",
-    "collectedAt": "2026-11-27T21:58:41Z"
+    "collectedAt": "2026-11-28T03:54:56Z"
   },
   {
     "id": "df23af778bcee8c8",
@@ -711,7 +781,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-26T22:05:00Z",
-    "collectedAt": "2026-11-27T21:58:41Z"
+    "collectedAt": "2026-11-28T03:54:56Z"
   },
   {
     "id": "5baea50728e685d6",

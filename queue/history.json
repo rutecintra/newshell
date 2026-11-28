@@ -1,5 +1,28 @@
 [
   {
+    "at": "2026-11-28T03:54:57Z",
+    "feeds": [
+      {
+        "id": "agencia-brasil",
+        "status": "ok",
+        "items": 10,
+        "error": null
+      },
+      {
+        "id": "camara-noticias",
+        "status": "ok",
+        "items": 20,
+        "error": null
+      },
+      {
+        "id": "un-news",
+        "status": "error",
+        "items": 0,
+        "error": "not well-formed (invalid token): line 1, column 0"
+      }
+    ]
+  },
+  {
     "at": "2026-11-27T21:58:41Z",
     "feeds": [
       {
