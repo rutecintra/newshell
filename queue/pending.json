@@ -1,5 +1,75 @@
 [
   {
+    "id": "07475980ce7a25f4",
+    "sourceId": "agencia-brasil",
+    "outlet": "Agência Brasil",
+    "title": "TV Brasil acompanha Corinthians x Atlético-MG pela Copinha F Petrobras",
+    "summary": "A TV Brasil transmite ao vivo neste sábado (28/11) o duelo entre Corinthians e Atlético-MG, válido pela 2ª rodada do Grupo B da Copa São Paulo de Futebol Júnior Feminino, a Copinha F Petrobras 2026. A disputa será no Estádio Nicolau Alayon, em São Paulo, a partir das 15h, com tr…",
+    "url": "https://agenciabrasil.ebc.com.br/esportes/noticia/2026-11/tv-brasil-acompanha-corinthians-x-atletico-mg-pela-copinha-f-petrobras",
+    "language": "pt-br",
+    "coverage": [
+      "brazil"
+    ],
+    "publishedAt": "2026-11-28T12:08:00Z",
+    "collectedAt": "2026-11-28T13:00:13Z"
+  },
+  {
+    "id": "eb1f6a389ea9ca1b",
+    "sourceId": "agencia-brasil",
+    "outlet": "Agência Brasil",
+    "title": "Lideranças comunitárias discutem saberes tradicionais",
+    "summary": "Termina neste sábado (28) a oitava edição do Festival Pautas Sociais, iniciativa do Serviço Social do Comércio (Sesc) que está sendo realizada em Aracaju (SE). Com o tema “Desenvolvimento Comunitário: Saberes, Quereres e Fazeres”, o encontro reúne representantes comunitários de…",
+    "url": "https://agenciabrasil.ebc.com.br/cultura/noticia/2026-11/liderancas-comunitarias-discutem-saberes-tradicionais",
+    "language": "pt-br",
+    "coverage": [
+      "brazil"
+    ],
+    "publishedAt": "2026-11-28T12:02:00Z",
+    "collectedAt": "2026-11-28T13:00:13Z"
+  },
+  {
+    "id": "b4309b640f35ead0",
+    "sourceId": "agencia-brasil",
+    "outlet": "Agência Brasil",
+    "title": "Interdição fraudulenta de idoso pode levar à perda de herança",
+    "summary": "A luta por uma velhice mais digna ganhou mais um capítulo esta semana, com a aprovação de um projeto de Lei (PL) que impede o recebimento de herança por quem tiver promovido, de forma fraudulenta, processo contra pessoa idosa, alegando sua incapacidade civil, a chamada curatela…",
+    "url": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-11/interdicao-fraudulenta-de-idoso-pode-levar-perda-de-heranca",
+    "language": "pt-br",
+    "coverage": [
+      "brazil"
+    ],
+    "publishedAt": "2026-11-28T11:07:00Z",
+    "collectedAt": "2026-11-28T13:00:13Z"
+  },
+  {
+    "id": "ec48534c8ded4f3d",
+    "sourceId": "agencia-brasil",
+    "outlet": "Agência Brasil",
+    "title": "Rádio Nacional transmite Palmeiras e Estudiantes de La Plata",
+    "summary": "O duelo entre Palmeiras e Estudiantes de La Plata, que se enfrentam neste sábado (28), às 17h, pela grande final da Copa Libertadores 2026, ganha transmissão ao vivo pela Rádio Nacional. A partida será disputada no Estádio Centenário, em Montevidéu, no Uruguai, e vale o tetracam…",
+    "url": "https://agenciabrasil.ebc.com.br/esportes/noticia/2026-11/radio-nacional-transmite-palmeiras-e-estudiantes-de-la-plata",
+    "language": "pt-br",
+    "coverage": [
+      "brazil"
+    ],
+    "publishedAt": "2026-11-28T10:28:00Z",
+    "collectedAt": "2026-11-28T13:00:13Z"
+  },
+  {
+    "id": "4ded8a6c40239383",
+    "sourceId": "agencia-brasil",
+    "outlet": "Agência Brasil",
+    "title": "Luiz Carlos da Vila recebe homenagem no Cena Musical, da TV Brasil",
+    "summary": "O Cena Musical da TV Brasil exibe neste sábado (28), às 23h, uma edição especial com os cantores e compositores Augusto Martins e Cláudio Jorge. A dupla apresenta o show Coisas Guardadas Pra Te Dar , espetáculo dedicado a celebrar a obra e a memória de Luiz Carlos da Vila. A edi…",
+    "url": "https://agenciabrasil.ebc.com.br/cultura/noticia/2026-11/luiz-carlos-da-vila-recebe-homenagem-no-cena-musical-da-tv-brasil",
+    "language": "pt-br",
+    "coverage": [
+      "brazil"
+    ],
+    "publishedAt": "2026-11-28T10:02:00Z",
+    "collectedAt": "2026-11-28T13:00:13Z"
+  },
+  {
     "id": "a5f4ff2929b5ad4e",
     "sourceId": "agencia-brasil",
     "outlet": "Agência Brasil",
@@ -11,7 +81,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-27T23:27:00Z",
-    "collectedAt": "2026-11-28T03:54:55Z"
+    "collectedAt": "2026-11-28T13:00:13Z"
   },
   {
     "id": "01b7508bfffaeaa3",
@@ -25,7 +95,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-27T22:47:00Z",
-    "collectedAt": "2026-11-28T03:54:55Z"
+    "collectedAt": "2026-11-28T13:00:13Z"
   },
   {
     "id": "dec506acb34138e9",
@@ -39,7 +109,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-27T22:40:00Z",
-    "collectedAt": "2026-11-28T03:54:55Z"
+    "collectedAt": "2026-11-28T13:00:13Z"
   },
   {
     "id": "b77fd7a65b389f48",
@@ -53,7 +123,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-27T22:29:00Z",
-    "collectedAt": "2026-11-28T03:54:55Z"
+    "collectedAt": "2026-11-28T13:00:13Z"
   },
   {
     "id": "6cadf68b45afd07b",
@@ -67,7 +137,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-27T21:50:00Z",
-    "collectedAt": "2026-11-28T03:54:55Z"
+    "collectedAt": "2026-11-28T13:00:13Z"
   },
   {
     "id": "4c0dfca28ef791dc",
@@ -81,7 +151,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-27T21:43:00Z",
-    "collectedAt": "2026-11-28T03:54:56Z"
+    "collectedAt": "2026-11-28T13:00:14Z"
   },
   {
     "id": "010a5233e2d41f90",
@@ -179,7 +249,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-27T20:25:00Z",
-    "collectedAt": "2026-11-28T03:54:56Z"
+    "collectedAt": "2026-11-28T13:00:14Z"
   },
   {
     "id": "0f29e12d12a83184",
@@ -207,7 +277,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-27T19:36:00Z",
-    "collectedAt": "2026-11-28T03:54:56Z"
+    "collectedAt": "2026-11-28T13:00:14Z"
   },
   {
     "id": "419dad8c5068e38a",
@@ -263,7 +333,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-27T18:53:00Z",
-    "collectedAt": "2026-11-28T03:54:56Z"
+    "collectedAt": "2026-11-28T13:00:14Z"
   },
   {
     "id": "2e46c1d70dcfc647",
@@ -277,7 +347,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-27T18:51:00Z",
-    "collectedAt": "2026-11-28T03:54:56Z"
+    "collectedAt": "2026-11-28T13:00:14Z"
   },
   {
     "id": "8efb3ff997e04d8f",
@@ -291,7 +361,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-27T18:47:00Z",
-    "collectedAt": "2026-11-28T03:54:56Z"
+    "collectedAt": "2026-11-28T13:00:14Z"
   },
   {
     "id": "3bebdfa8bd1d1b58",
@@ -305,7 +375,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-27T18:44:00Z",
-    "collectedAt": "2026-11-28T03:54:56Z"
+    "collectedAt": "2026-11-28T13:00:14Z"
   },
   {
     "id": "aa8b59a615968b17",
@@ -319,7 +389,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-27T18:40:00Z",
-    "collectedAt": "2026-11-28T03:54:56Z"
+    "collectedAt": "2026-11-28T13:00:14Z"
   },
   {
     "id": "5b7680d8acea416c",
@@ -333,7 +403,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-27T18:39:00Z",
-    "collectedAt": "2026-11-28T03:54:56Z"
+    "collectedAt": "2026-11-28T13:00:14Z"
   },
   {
     "id": "c6477c9742b24395",
@@ -347,7 +417,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-27T18:38:00Z",
-    "collectedAt": "2026-11-28T03:54:56Z"
+    "collectedAt": "2026-11-28T13:00:14Z"
   },
   {
     "id": "232cb1cd93bbcdd1",
@@ -361,7 +431,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-27T15:53:00Z",
-    "collectedAt": "2026-11-28T03:54:56Z"
+    "collectedAt": "2026-11-28T13:00:14Z"
   },
   {
     "id": "6ce33f7d44bbe60f",
@@ -375,7 +445,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-27T15:50:00Z",
-    "collectedAt": "2026-11-28T03:54:56Z"
+    "collectedAt": "2026-11-28T13:00:14Z"
   },
   {
     "id": "859f30c2b0c94828",
@@ -389,7 +459,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-27T14:43:00Z",
-    "collectedAt": "2026-11-28T03:54:56Z"
+    "collectedAt": "2026-11-28T13:00:14Z"
   },
   {
     "id": "7f748ba685966878",
@@ -403,7 +473,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-27T14:19:00Z",
-    "collectedAt": "2026-11-28T03:54:56Z"
+    "collectedAt": "2026-11-28T13:00:14Z"
   },
   {
     "id": "7bcb7ce938006370",
@@ -417,7 +487,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-27T14:15:00Z",
-    "collectedAt": "2026-11-28T03:54:56Z"
+    "collectedAt": "2026-11-28T13:00:14Z"
   },
   {
     "id": "faf4564bb197c752",
@@ -473,7 +543,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-27T12:00:00Z",
-    "collectedAt": "2026-11-28T03:54:56Z"
+    "collectedAt": "2026-11-28T13:00:14Z"
   },
   {
     "id": "8b26d6b7cd6d4bd7",
@@ -487,7 +557,7 @@
       "world"
     ],
     "publishedAt": "2026-11-27T12:00:00Z",
-    "collectedAt": "2026-11-27T21:58:41Z"
+    "collectedAt": "2026-11-28T13:00:15Z"
   },
   {
     "id": "adb3a991a870feab",
@@ -501,7 +571,7 @@
       "world"
     ],
     "publishedAt": "2026-11-27T12:00:00Z",
-    "collectedAt": "2026-11-27T21:58:41Z"
+    "collectedAt": "2026-11-28T13:00:15Z"
   },
   {
     "id": "c9585026bfdc37e2",
@@ -585,7 +655,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-27T11:00:00Z",
-    "collectedAt": "2026-11-28T03:54:56Z"
+    "collectedAt": "2026-11-28T13:00:14Z"
   },
   {
     "id": "663e21351d0c46a5",
@@ -725,7 +795,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-26T22:37:00Z",
-    "collectedAt": "2026-11-28T03:54:56Z"
+    "collectedAt": "2026-11-28T13:00:14Z"
   },
   {
     "id": "49e51f63a7ab159e",
@@ -753,7 +823,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-26T22:14:00Z",
-    "collectedAt": "2026-11-28T03:54:56Z"
+    "collectedAt": "2026-11-28T13:00:14Z"
   },
   {
     "id": "df23af778bcee8c8",
@@ -781,7 +851,7 @@
       "brazil"
     ],
     "publishedAt": "2026-11-26T22:05:00Z",
-    "collectedAt": "2026-11-28T03:54:56Z"
+    "collectedAt": "2026-11-28T13:00:14Z"
   },
   {
     "id": "5baea50728e685d6",
@@ -1005,7 +1075,7 @@
       "world"
     ],
     "publishedAt": "2026-11-26T12:00:00Z",
-    "collectedAt": "2026-11-27T21:58:41Z"
+    "collectedAt": "2026-11-28T13:00:15Z"
   },
   {
     "id": "2662f04af74a1ed5",
@@ -1019,7 +1089,7 @@
       "world"
     ],
     "publishedAt": "2026-11-26T12:00:00Z",
-    "collectedAt": "2026-11-27T21:58:41Z"
+    "collectedAt": "2026-11-28T13:00:15Z"
   },
   {
     "id": "5ae09920b1227639",
@@ -1033,7 +1103,7 @@
       "world"
     ],
     "publishedAt": "2026-11-26T12:00:00Z",
-    "collectedAt": "2026-11-27T21:58:41Z"
+    "collectedAt": "2026-11-28T13:00:15Z"
   },
   {
     "id": "290c06ac4595e73f",
@@ -1089,7 +1159,7 @@
       "world"
     ],
     "publishedAt": "2026-11-25T12:00:00Z",
-    "collectedAt": "2026-11-27T21:58:41Z"
+    "collectedAt": "2026-11-28T13:00:15Z"
   },
   {
     "id": "c964e4b3db3ecb1a",
@@ -1103,7 +1173,7 @@
       "world"
     ],
     "publishedAt": "2026-11-25T12:00:00Z",
-    "collectedAt": "2026-11-27T21:58:41Z"
+    "collectedAt": "2026-11-28T13:00:15Z"
   },
   {
     "id": "1082f43610c695b8",
@@ -1117,7 +1187,7 @@
       "world"
     ],
     "publishedAt": "2026-11-25T12:00:00Z",
-    "collectedAt": "2026-11-27T21:58:41Z"
+    "collectedAt": "2026-11-28T13:00:15Z"
   },
   {
     "id": "8e3c2ec7f7ddac1a",
@@ -1131,7 +1201,7 @@
       "world"
     ],
     "publishedAt": "2026-11-25T12:00:00Z",
-    "collectedAt": "2026-11-27T21:58:41Z"
+    "collectedAt": "2026-11-28T13:00:15Z"
   },
   {
     "id": "f0e5e9ff176e0945",
@@ -1145,7 +1215,7 @@
       "world"
     ],
     "publishedAt": "2026-11-25T12:00:00Z",
-    "collectedAt": "2026-11-27T21:58:41Z"
+    "collectedAt": "2026-11-28T13:00:15Z"
   },
   {
     "id": "c47d594f2fe1e10e",
@@ -1159,7 +1229,7 @@
       "world"
     ],
     "publishedAt": "2026-11-25T12:00:00Z",
-    "collectedAt": "2026-11-27T21:58:41Z"
+    "collectedAt": "2026-11-28T13:00:15Z"
   },
   {
     "id": "3db522a7a8e93809",
@@ -1173,7 +1243,7 @@
       "world"
     ],
     "publishedAt": "2026-11-24T12:00:00Z",
-    "collectedAt": "2026-11-27T21:58:41Z"
+    "collectedAt": "2026-11-28T13:00:15Z"
   },
   {
     "id": "58b673023dcf1630",
@@ -1187,7 +1257,7 @@
       "world"
     ],
     "publishedAt": "2026-11-24T12:00:00Z",
-    "collectedAt": "2026-11-27T21:58:41Z"
+    "collectedAt": "2026-11-28T13:00:15Z"
   },
   {
     "id": "14db9f0896734b67",
@@ -1201,7 +1271,7 @@
       "world"
     ],
     "publishedAt": "2026-11-24T12:00:00Z",
-    "collectedAt": "2026-11-27T21:58:41Z"
+    "collectedAt": "2026-11-28T13:00:15Z"
   },
   {
     "id": "7d8cc547f7c9a021",
@@ -1215,7 +1285,7 @@
       "world"
     ],
     "publishedAt": "2026-11-24T12:00:00Z",
-    "collectedAt": "2026-11-27T21:58:41Z"
+    "collectedAt": "2026-11-28T13:00:15Z"
   },
   {
     "id": "a44f2907ccd9b397",
@@ -1229,7 +1299,7 @@
       "world"
     ],
     "publishedAt": "2026-11-24T12:00:00Z",
-    "collectedAt": "2026-11-27T21:58:41Z"
+    "collectedAt": "2026-11-28T13:00:15Z"
   },
   {
     "id": "67a38418993d24fc",
@@ -1243,7 +1313,7 @@
       "world"
     ],
     "publishedAt": "2026-11-24T12:00:00Z",
-    "collectedAt": "2026-11-27T21:58:41Z"
+    "collectedAt": "2026-11-28T13:00:15Z"
   },
   {
     "id": "f12aebcb27fa9ccc",
@@ -1257,7 +1327,7 @@
       "world"
     ],
     "publishedAt": "2026-11-24T12:00:00Z",
-    "collectedAt": "2026-11-27T21:58:41Z"
+    "collectedAt": "2026-11-28T13:00:15Z"
   },
   {
     "id": "23ce2785727fbeec",
@@ -1271,7 +1341,7 @@
       "world"
     ],
     "publishedAt": "2026-11-23T12:00:00Z",
-    "collectedAt": "2026-11-27T21:58:41Z"
+    "collectedAt": "2026-11-28T13:00:15Z"
   },
   {
     "id": "16ee36335eaaf1cb",
@@ -1285,7 +1355,7 @@
       "world"
     ],
     "publishedAt": "2026-11-23T12:00:00Z",
-    "collectedAt": "2026-11-27T21:58:41Z"
+    "collectedAt": "2026-11-28T13:00:15Z"
   },
   {
     "id": "095442ef4a2257f8",
@@ -1299,7 +1369,7 @@
       "world"
     ],
     "publishedAt": "2026-11-23T12:00:00Z",
-    "collectedAt": "2026-11-27T21:58:41Z"
+    "collectedAt": "2026-11-28T13:00:15Z"
   },
   {
     "id": "a68db2f1d7afa781",
@@ -1313,7 +1383,7 @@
       "world"
     ],
     "publishedAt": "2026-11-23T12:00:00Z",
-    "collectedAt": "2026-11-27T21:58:41Z"
+    "collectedAt": "2026-11-28T13:00:15Z"
   },
   {
     "id": "307e98b05da69a02",
@@ -1327,7 +1397,7 @@
       "world"
     ],
     "publishedAt": "2026-11-23T12:00:00Z",
-    "collectedAt": "2026-11-27T21:58:41Z"
+    "collectedAt": "2026-11-28T13:00:15Z"
   },
   {
     "id": "180a5dc2f3a58b22",
@@ -1341,7 +1411,7 @@
       "world"
     ],
     "publishedAt": "2026-11-22T12:00:00Z",
-    "collectedAt": "2026-11-27T21:58:41Z"
+    "collectedAt": "2026-11-28T13:00:15Z"
   },
   {
     "id": "2f16e29e794aeda1",
@@ -1355,7 +1425,7 @@
       "world"
     ],
     "publishedAt": "2026-11-22T12:00:00Z",
-    "collectedAt": "2026-11-27T21:58:41Z"
+    "collectedAt": "2026-11-28T13:00:15Z"
   },
   {
     "id": "d8cb37b6ee449ecf",
@@ -1369,7 +1439,7 @@
       "world"
     ],
     "publishedAt": "2026-11-22T12:00:00Z",
-    "collectedAt": "2026-11-27T21:58:41Z"
+    "collectedAt": "2026-11-28T13:00:15Z"
   },
   {
     "id": "1651c68df9d73951",
@@ -1383,7 +1453,7 @@
       "world"
     ],
     "publishedAt": "2026-11-21T12:00:00Z",
-    "collectedAt": "2026-11-27T21:58:41Z"
+    "collectedAt": "2026-11-28T13:00:15Z"
   },
   {
     "id": "0dccb4dc48ad0533",
@@ -1397,7 +1467,7 @@
       "world"
     ],
     "publishedAt": "2026-11-21T12:00:00Z",
-    "collectedAt": "2026-11-27T21:58:41Z"
+    "collectedAt": "2026-11-28T13:00:15Z"
   },
   {
     "id": "c8ebbd1cbde74c03",
@@ -1411,7 +1481,7 @@
       "world"
     ],
     "publishedAt": "2026-11-20T12:00:00Z",
-    "collectedAt": "2026-11-27T21:58:41Z"
+    "collectedAt": "2026-11-28T13:00:15Z"
   },
   {
     "id": "1e3300495dbd72fb",
@@ -1425,7 +1495,7 @@
       "world"
     ],
     "publishedAt": "2026-11-20T12:00:00Z",
-    "collectedAt": "2026-11-27T21:58:41Z"
+    "collectedAt": "2026-11-28T13:00:15Z"
   },
   {
     "id": "1e33a84d56832480",
